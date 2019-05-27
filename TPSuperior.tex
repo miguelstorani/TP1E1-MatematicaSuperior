@@ -1,0 +1,404 @@
+\documentclass[12pt]{article}
+
+%----------------------Autor y fecha----------------------
+
+\title{Matemática Superior}
+\author{\bfseries{Trabajo Práctico 1}\\
+Clara Mazzi, Miguel Storani}
+\date{26 de mayo de 2019i}
+
+
+%------------------------Paquetes-------------------------
+
+\usepackage{graphicx}			% Gráficos
+\usepackage[utf8]{inputenc}		% Codificación
+\usepackage[spanish]{babel}		% Idioma
+\usepackage{lastpage}
+\usepackage{dcolumn}			% Tablas
+\usepackage{enumitem}			% Listas
+\usepackage{bm}					% Negrita en ecuaciones
+%\usepackage{pstricks}			% Arboles
+%\usepackage{pst-tree}			% 
+\usepackage{amsmath}
+\usepackage{amssymb}
+%---------------------------------------------------------
+
+%------------------------Márgenes-------------------------
+
+\usepackage{vmargin}
+\setpapersize{A4}
+\setmargins{3cm}	% margen izquierdo
+{1.25cm}			% margen superior
+{16.5cm}			% anchura del texto
+{24.2cm}			% altura del texto
+{18pt}				% altura de los encabezados
+{1cm}				% espacio entre el texto y los encabezados
+{10pt}				% altura del pie de página
+{2cm}				% espacio entre el texto y el pie de página
+%---------------------------------------------------------
+
+%-----------Tamaño de Encabezado y Pie de pagina----------
+
+\usepackage{fancyhdr}						% Paquete
+
+\setlength{\headwidth}{\textwidth}
+\setlength{\headheight}{28pt}
+\setlength{\footskip}{1cm}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{1pt}
+%---------------------------------------------------------
+
+%---------------------Diseño Encabezado-------------------
+
+\fancyhead[L]{\includegraphics[height=.5cm]{./logos/UTN-FRSF.jpg}}
+\fancyhead[R]{\textsf{\Large{Ingeniería en Sistemas de Informacíon}}}
+%---------------------------------------------------------
+
+%--------------------Diseño Pié de pagina-----------------
+
+
+\fancyfoot[R] {\thepage \textnormal{ de} \pageref{LastPage}}
+\fancyfoot[C]{Mazzi, María Clara \hspace{1cm} Storani, Miguel Ignacio}
+\fancyfoot[L]{2019}
+%---------------------------------------------------------
+
+
+
+%\renewcommand{\familydefault}{\sfdefault}	% Cambio de fuente por defecto
+
+\pagestyle{empty}							% Estilo de página (Habilita los encabezados y pié de página)
+
+
+
+
+\begin{document}
+
+%----------------------Carátula---------------------------
+\pagestyle{empty}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\begin{center} % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Universidad Tecnológica Nacional}\\[0.5cm]				% Name of your university/college
+\textsc{\Large Facultad Regional Santa Fe}\\[1.5cm]						% Major heading such as course name
+\textsc{\large Ingeniería en Sistemas de Información}\\[0.5cm]			% Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.9cm]
+{ \huge \bfseries Matemática Superior}\\[0.4cm]
+{ \large \bfseries Trabajo Práctico 1}\\[0.7cm] % Title of your document
+\HRule \\[1.5cm]
+
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.8\textwidth}
+\begin{flushleft}\large
+\emph{Alumnos:} \\
+\hspace{0.5cm}  \textsc{Mazzi}, Maria Clara
+{\small \texttt{mazzimclara@gmail.com}}\\
+\hspace{0.5cm}  \textsc{Storani}, Miguel Ignacio
+{\small \texttt{miguelignaciostorani@gmail.com}}\\
+
+
+
+\end{flushleft}
+\end{minipage}\\[2.5cm]
+
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%-----------------------------------------------------------------------
+%	DATE SECTION
+%-----------------------------------------------------------------------
+
+
+
+%-----------------------------------------------------------------------
+%	LOGO SECTION
+%-----------------------------------------------------------------------
+
+\includegraphics[width=5cm]{./logos/logo_utn.png}\\[1cm] 				% Include a department/university logo - this will require the graphicx package
+ {\large 26 de mayo de 2019}											% Date, change the \today to a set date if you want to be precise
+%-----------------------------------------------------------------------
+
+\newpage % Fill the rest of the page with whitespace
+\end{center}
+%%\end{titlepage}
+%%---------------------------------------------------------
+
+\begin{abstract}
+kjdfhgjhsdfjkvbnsjkfdvbkjfdbv
+\end{abstract}
+
+%--------------------------Índice-------------------------
+
+\tableofcontents\vspace{2.5cm}
+\listoffigures
+\thispagestyle{empty}
+\end{titlepage}
+\newpage
+%---------------------------------------------------------
+\pagestyle{fancy}
+%############################
+%## Acá escribí tu trabajo ##
+%############################
+
+
+\section{Ejercicios}
+
+\subsection{Expresar la nueva transformada en función de transformadas conocidas}
+
+\begin{equation}
+\overline{T}_{ms}(f_{(t)}) = \frac12
+\begin{pmatrix}
+\int_{-\infty}^{\infty} f_{(t)} e^{-z |t|}dt\\
+\int_{-\infty}^{\infty} f_{(t)} \textrm{sign}(t)e^{-z |t|}dt
+\end{pmatrix}
+\label{transformada_original}
+\end{equation}
+
+Para definir a nuestra transformada en función de tranformadas conocidas operamos separadamente con cada una de las componentes que la componen.
+$$
+\int\limits_{-\infty}^{\infty} f_{(t)} e^{-z |t|}dt= \int\limits_{0}^{\infty} f_{(t)} e^{-z t}dt + \int\limits_{-\infty}^{0} f_{(t)} e^{-z (-t)}dt$$
+\begin{equation}
+\int\limits_{-\infty}^{\infty} f_{(t)} e^{-z |t|}dt= \mathcal{L}\left\{f(t)u(t)\right\}_{(s)} +  \int\limits_{-\infty}^{0} f_{(t)} e^{-z (-t)}dt
+\label{primer_componente}
+\end{equation}
+
+Resolviendo separadamente el segundo término de la expresión, aplicando un cambio de variable tal que $t=-v$ tenemos que:
+
+$$ \int\limits_{-\infty}^{0} f(t) e^{-z (-t)}dt \Rightarrow - \int\limits_{\infty}^{0} f(-v) e^{-z (v)}dv =  \int\limits_{0}^{\infty} f(-v) e^{-z (v)}dv $$
+$$\int\limits_{0}^{\infty} f(-v) e^{-z (v)}dv = \mathcal{L}\left\{f(-v) u(v)\right\}_{(s)}$$
+
+Por propiedad de simetría de la transformada de Laplace, se puede expresar la siguiente igualdad:
+ \begin{equation}
+ \int\limits_{-\infty}^{0} f(t) e^{-z (-t)}dt = \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)} 
+ \label{segundo_termino}
+ \end{equation}
+ 
+Lo cual representa un cambio de la variable compleja, por la misma variable compleja aplicando un factor de $-1$. Reemplazando \ref{segundo_termino} en \ref{primer_componente} obtenemos que:
+
+\begin{equation}
+\int\limits_{-\infty}^{\infty} f_{(t)} e^{-z |t|}dt= \mathcal{L}\left\{f(t)u(t)\right\}_{(s)} +  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)}
+\label{primer_componente_final}
+\end{equation}
+
+Pasamos ahora a operar con la segunda componente de nuestra transformada.
+
+$$\int\limits_{-\infty}^{\infty} f_{(t)} \textrm{sign}(t)e^{-z |t|}dt$$
+
+Podemos definir a la función sign$(t)$ en función del escalón unitario, quedando sign$(t) = u(t)-u(-t)$, por lo tanto:
+$$\int\limits_{-\infty}^{\infty} f_{(t)} \textrm{sign}(t)e^{-z |t|}dt = \int\limits_{-\infty}^{\infty} f_{(t)} (u(t) -u(-t))e^{-z |t|}dt$$
+
+$$\int\limits_{-\infty}^{\infty} f_{(t)} (u(t) -u(-t))e^{-z |t|}dt =  \int\limits_{-\infty}^{\infty} f(t)u(t) e^{-z |t|}dt - \int\limits_{-\infty}^{\infty} f_{(t)}u(-t) e^{-z |t|}dt$$
+
+\begin{equation}
+\int\limits_{-\infty}^{\infty} f_{(t)} (u(t) -u(-t))e^{-z |t|}dt =   \mathcal{L}\left\{f(t)u(t)\right\}_{(s)} - \int\limits_{-\infty}^{\infty} f_{(t)}u(-t) e^{-z |t|}dt
+\label{transformada_a_la_mitad}
+\end{equation}
+
+El segundo término se puede expresar como:
+\begin{equation} \int\limits_{-\infty}^{\infty} f_{(t)}u(-t) e^{-z |t|}dt = \int\limits_{-\infty}^{0} f(t) e^{-z (-t)}dt \Rightarrow  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)}
+\label{transformada_segundo_termino}
+\end{equation}
+
+Expresión para la que ya hemos hayado una expresión en función de transformadas conocidas, por lo que la segunda componente de nuestra tranformada quedaría de reemplazar \ref{transformada_segundo_termino} en \ref{transformada_a_la_mitad}:
+ \begin{equation}
+ \int\limits_{-\infty}^{\infty} f_{(t)} \textrm{sign}(t)e^{-z |t|}dt =    \mathcal{L}\left\{f(t)u(t)\right\}_{(s)} -  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)}
+ \label{segunda_componente_final}
+ \end{equation}
+
+
+Luego de haber calculado ambas componentes, reemplazamos \ref{primer_componente_final} y \ref{segunda_componente_final} en \ref{transformada_original} nos queda que nuestra transformada se puede expresar como:
+
+\begin{equation}
+\overline{T}_{ms}(f_{(t)}) = \frac12
+\begin{pmatrix}
+\mathcal{L}\left\{f(t)u(t)\right\}_{(s)} +  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)}\\[0.2 cm]
+\mathcal{L}\left\{f(t)u(t)\right\}_{(s)} -  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)}
+\end{pmatrix}
+\label{transformada_con_laplace}
+\end{equation}
+
+\subsection{Condiciones necesarias y suficientes para garantizar la existencia de la tranformada}
+
+Para asegurar la existencia de la transformada se debe cumplir que exista la transformada de Laplace para la función estudiada. Existe la transformada $\overline{T}_{ms}(f_{(t)})$ siempre que $f_{(t)}$ sea una función que cumple que:
+
+\begin{itemize}
+\item Es seccionalmente continua sobre el intervalo $t \le A$ para cualquier $A > 0$, esto es, posee a lo más un número finito de discontinuidades de salto en dicho intervalo.
+\item Es de orden exponencial para $t \ge M$, es decir:
+\center{ $|f(t)| \le Ke^{at}$ para $t\ge M$ donde $K$, $a$ y$M$ son constantes}
+\end{itemize}
+
+
+\subsection{Propiedades de la nueva transformada}
+
+
+Se demuestran algunas propiedades de la nueva transformada, tomando como base las propiedades de la transformada de Laplace:
+
+
+\subsubsection{Linealidad}
+
+\begin{equation}
+ \overline{T}_{ms}(a f_{(t)} + b g_{(t)}) = a \overline{T}_{ms}(f_{(t)}) + b  \overline{T}_{ms}(g_{(t)})
+\label{linealidad}
+\end{equation}
+
+{\bfseries Demostración:}
+{\small
+$$
+\overline{T}_{ms}(a f_{(t)} + b g_{(t)}) = \frac12
+\begin{pmatrix}
+\mathcal{L}\left\{[a f(t) + b g(t)]u(t)\right\}_{(s)} +  \mathcal{L}\left\{[a f(t) + b g(t)]u(-t)\right\}_{(-s)}\\[0.2 cm]
+\mathcal{L}\left\{[a f(t) + b g(t)]u(t)\right\}_{(s)} -  \mathcal{L}\left\{[a f(t) + b g(t)]u(-t)\right\}_{(-s)}
+\end{pmatrix}
+$$
+
+$$
+\overline{T}_{ms}(a f_{(t)} + b g_{(t)}) = \frac12
+\begin{pmatrix}
+\mathcal{L}\left\{[a f(t)u(t)] + [b g(t)u(t)]\right\}_{(s)} +  \mathcal{L}\left\{[a f(t) u(-t)] + [b g(t)u(-t)]\right\}_{(-s)}\\[0.2 cm]
+\mathcal{L}\left\{[a f(t)u(t)] + [b g(t)u(t)]\right\}_{(s)} -  \mathcal{L}\left\{[a f(t) u(-t)] + [b g(t)u(-t)]\right\}_{(-s)}
+\end{pmatrix}
+$$
+
+$$
+\overline{T}_{ms}(a f_{(t)} + b g_{(t)}) = \frac12
+\begin{pmatrix}
+\mathcal{L}\left\{[a f(t)u(t)]\right\} + \mathcal{L}\left\{[b g(t)u(t)]\right\}_{(s)} +  \mathcal{L}\left\{[a f(t) u(-t)]\right\} + \mathcal{L}\left\{[b g(t)u(-t)]\right\}_{(-s)}\\[0.2 cm]
+\mathcal{L}\left\{[a f(t)u(t)]\right\} + \mathcal{L}\left\{[b g(t)u(t)]\right\}_{(s)} -  \mathcal{L}\left\{[a f(t) u(-t)]\right\} - \mathcal{L}\left\{[b g(t)u(-t)]\right\}_{(-s)}
+\end{pmatrix}
+$$
+
+$$
+\overline{T}_{ms}(a f_{(t)} + b g_{(t)}) = \frac12
+\begin{pmatrix}
+a\mathcal{L}\left\{[ f(t)u(t)]\right\} +  a\mathcal{L}\left\{[ f(t) u(-t)]\right\} + b\mathcal{L}\left\{[ g(t)u(t)]\right\}_{(s)}  + b\mathcal{L}\left\{[ g(t)u(-t)]\right\}_{(-s)}\\[0.2 cm]
+a\mathcal{L}\left\{[f(t)u(t)]\right\} -  a\mathcal{L}\left\{[a f(t) u(-t)]\right\} + b\mathcal{L}\left\{[ g(t)u(t)]\right\}_{(s)}  - b\mathcal{L}\left\{[ g(t)u(-t)]\right\}_{(-s)}
+\end{pmatrix}
+$$
+
+
+$$
+\overline{T}_{ms}(a f_{(t)} + b g_{(t)}) = a \frac12
+\begin{pmatrix}
+\mathcal{L}\left\{[ f(t)u(t)]\right\} +  \mathcal{L}\left\{[ f(t) u(-t)]\right\}\\[0.2 cm]
+\mathcal{L}\left\{[f(t)u(t)]\right\} -  \mathcal{L}\left\{[a f(t) u(-t)]\right\}
+\end{pmatrix}
++b \frac12
+\begin{pmatrix}
+  \mathcal{L}\left\{[ g(t)u(t)]\right\}_{(s)}  + \mathcal{L}\left\{[ g(t)u(-t)]\right\}_{(-s)}\\[0.2 cm]
+  \mathcal{L}\left\{[ g(t)u(t)]\right\}_{(s)}  - \mathcal{L}\left\{[ g(t)u(-t)]\right\}_{(-s)}
+\end{pmatrix}
+$$
+}
+
+$$
+\therefore \overline{T}_{ms}(a f_{(t)} + b g_{(t)}) = a \overline{T}_{ms}(f_{(t)}) + b  \overline{T}_{ms}(g_{(t)})
+$$
+
+\subsubsection{Desplazamineto temporal}
+
+\begin{equation}
+ \overline{T}_{ms}(f_{(t-a)}) = \overline{T}_{ms}(f_{(t)}) e^{-at}
+\label{desplazamiento_temporal}
+\end{equation}
+
+{\bfseries Demostración:}
+$$\overline{T}_{ms}(f_{(t-a)}) = \frac12
+\begin{pmatrix}
+\mathcal{L}\left\{f(t-a)u(t-a)\right\}_{(s)} +  \mathcal{L}\left\{f(t-a)u(-(t-a))\right\}_{(-s)}\\[0.2 cm]
+\mathcal{L}\left\{f(t-a)u(t-a)\right\}_{(s)} -  \mathcal{L}\left\{f(t-a)u(-(t-a))\right\}_{(-s)}
+\end{pmatrix}$$
+
+
+$$
+\overline{T}_{ms}(f_{(t-a)}) = \frac12
+\begin{pmatrix}
+\mathcal{L}\left\{f(t)u(t)\right\}_{(s)} e^{-at} +  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)} e^{-at} \\[0.2 cm]
+\mathcal{L}\left\{f(t)u(t)\right\}_{(s)}  e^{-at} -  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)} e^{-at} 
+\end{pmatrix}
+$$
+
+$$
+\overline{T}_{ms}(f_{(t-a)}) = \frac12
+\begin{pmatrix}
+\left[\mathcal{L}\left\{f(t)u(t)\right\}_{(s)} +  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)}\right]e^{-at} \\[0.2 cm]
+\left[\mathcal{L}\left\{f(t)u(t)\right\}_{(s)} -  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)}\right]e^{-at} 
+\end{pmatrix}
+$$
+
+
+$$
+\overline{T}_{ms}(f_{(t-a)}) = \frac12
+\begin{pmatrix}
+\mathcal{L}\left\{f(t)u(t)\right\}_{(s)} +  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)}\\[0.2 cm]
+\mathcal{L}\left\{f(t)u(t)\right\}_{(s)} -  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)}
+\end{pmatrix} e^{-at}
+$$
+
+$$
+\therefore \overline{T}_{ms}(f_{(t-a)}) = \overline{T}_{ms}(f_{(t)}) e^{-at}
+$$
+
+\subsubsection{Convolución (deprecated)}
+\begin{equation}
+\overline{T}_{ms}(f_{(t)} * g_{(t)}) = \frac12
+\begin{pmatrix}
+\mathcal{L}\left\{[f_{(t)} * g_{(t)}]u(t)\right\}_{(s)} +  \mathcal{L}\left\{[f_{(t)} * g_{(t)}]u(-t)\right\}_{(-s)}\\[0.2 cm]
+\mathcal{L}\left\{[f_{(t)} * g_{(t)}]u(t)\right\}_{(s)} -  \mathcal{L}\left\{[f_{(t)} * g_{(t)}]u(-t)\right\}_{(-s)}
+\end{pmatrix}
+\end{equation}
+
+\subsubsection{Derivada temporal}
+
+Esta propiedad sólo se cumple para toda función que cumpla $f(t) = 0 \ \forall t < 0$, por lo que utilizaremos la transformada unilateral de Laplace.
+
+$$
+\overline{T}_{ms}(f_{(t)}) = \frac12
+\begin{pmatrix}
+\mathcal{L}_u\left\{f(t)u(t)\right\}_{(s)} +  0\\[0.2 cm]
+\mathcal{L}_u\left\{f(t)u(t)\right\}_{(s)} - 0
+\end{pmatrix}
+$$
+
+\bfseries{Demostración:}
+
+$$\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) = \frac12
+\begin{pmatrix}
+\mathcal{L}_u\left\{\frac{d^n f_{(t)}}{dt^n}\right\}\\[0.2 cm]
+\mathcal{L}_u\left\{\frac{d^n f_{(t)}}{dt^n}\right\}
+\end{pmatrix}
+$$
+
+$$\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) = \frac12
+\begin{pmatrix}
+s^n\mathcal{L}_u\left\{f_{(t)}\right\} -\sum\limits_{k=0}^{k=n-1} s^k f^{(n-k-1)}_{(0^-)}\\[0.5 cm]
+s^n\mathcal{L}_u\left\{f_{(t)}\right\} -\sum\limits_{k=0}^{k=n-1} s^k f^{(n-k-1)}_{(0^-)}
+\end{pmatrix}
+$$
+
+$$\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) = \frac12 s^n\mathcal{L}_u\left\{f_{(t)}\right\} -\sum\limits_{k=0}^{k=n-1} s^k f^{(n-k-1)}_{(0^-)}
+\begin{pmatrix}
+1\\
+1
+\end{pmatrix}
+$$
+
+
+
+\end{document} 
