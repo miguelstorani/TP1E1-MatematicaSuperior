@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.26)  26 MAY 2019 19:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.29)  29 MAY 2019 16:41
 entering extended mode
 **./TPSuperior.tex
 (TPSuperior.tex
@@ -58,7 +58,7 @@ File: switch.def 2019/05/04 3.31 Babel switching mechanism
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
@@ -80,7 +80,7 @@ Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/lastpage\lastpage.sty"
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/lastpage\lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\dcolumn.sty"
@@ -96,7 +96,7 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \backup@length=\skip44
 \ar@cellbox=\box28
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/enumitem\enumitem.sty"
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/02/04 v3.8 Customized lists
 \labelindent=\skip45
 \enit@outerparindent=\dimen108
@@ -182,13 +182,13 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/vmargin\vmargin.sty"
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/vmargin\vmargin.sty
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 \PaperWidth=\dimen118
 \PaperHeight=\dimen119
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.sty"
+) (C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip49
@@ -220,7 +220,7 @@ LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
 
-("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count105
 \scratchdimen=\dimen120
@@ -302,8 +302,8 @@ Package pdftex.def Info: ./logos/logo_utn.png  used on input line 134.
 (pdftex.def)             Requested size: 142.26378pt x 211.82144pt.
  [1
 
-{C:/Users/User/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logos/logo
-_utn.png>]
+{C:/Users/Miguel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logos/lo
+go_utn.png>]
 (TPSuperior.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -356,7 +356,7 @@ Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 365.
 AED: lastpage setting LastPage
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 404.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 407.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [4] (TPSuperior.aux
 LaTeX Info: Redefining \. on input line 6.
@@ -364,7 +364,7 @@ LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
  4040 strings out of 492895
- 54242 string characters out of 3133482
+ 54606 string characters out of 3133476
  143550 words of memory out of 3000000
  7861 multiletter control sequences out of 15000+200000
  17672 words of font info for 64 fonts, out of 3000000 for 9000
@@ -388,7 +388,7 @@ c/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10
 .pfb>
-Output written on TPSuperior.pdf (6 pages, 264592 bytes).
+Output written on TPSuperior.pdf (6 pages, 264614 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
