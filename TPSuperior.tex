@@ -147,7 +147,6 @@ kjdfhgjhsdfjkvbnsjkfdvbkjfdbv
 %--------------------------Índice-------------------------
 
 \tableofcontents\vspace{2.5cm}
-\listoffigures
 \thispagestyle{empty}
 \end{titlepage}
 \newpage
@@ -588,9 +587,15 @@ $$
 \section{Tabla de transformada de funciones elementales}
 
 \section{Solución de ecuaciones diferenciales}
+\begin{enumerate}[label=(\alph*)]
+\item Los sistemas presentados son lineales e invariantes en el tiempo (LTI).
+\item Los sistemas representados pueden ser siempre resueltos utilizando la transformada de Laplace. En el caso de utilizar la transformada de Fourier no siempre podrán ser resueltos, ya que si la función ingresada no tiene transformada el sistema no puede ser resuelto.
+\item La transformada definida en este trabajo presenta ciertas ventajas, como el  hecho de visualizar rápidamene si la función original es par o impar. Para saber si una función es par, sólo se necesita saber si la componente $y$ de la transformada es nula en el caso de ser impar, la componente $x$ será nula. Otra ventaja que presenta esta transformada es la capacidad de ser calculada mediante la transformada de Laplace, razón por la cual comparte muchas propiedades.\\
 
+Como desventaja se destaca la complejidad de manejo, ya que al ser una transformada vectorial se deben hacer más cálculos  (en comparación a la transformada de Laplace).
+\end{enumerate}
 \subsection{Condiciones iniciales nulas}
-
+\label{condiciones_iniciales_nulas}
 $$y''-3y'+2y=f(x)$$
 $$
 y''+3y'+2y=f(x)
@@ -636,7 +641,7 @@ $$
 
 \subsubsection{Solución a los sistemas para $\bm{ f_{(x)}=\sen(x)}$}
 
-Calculamos la transformada de $f_{(x)}$:
+Calculamos la transformada para $f_{(x)} = \cos(x)$:
 $$
 \overline{T}_{ms}\left\{\sen(x)\right\} = \begin{pmatrix}
 0\\[0.3cm]
@@ -644,6 +649,9 @@ $$
 \end{pmatrix}
 $$
 
+
+\begin{itemize}
+\item Sistema  $y'' - 3 y' +2y=\sen(x)$
 Operamos utilizando la tranformada calculada:
 
 $$
@@ -657,10 +665,298 @@ y_1 =\overline{T}_{ms}^{-1}\left\{ \frac{1}{\left( z^2 - 3z + 2\right) }  \begin
 $$\\
 
 Utilizando la expresión de la antitransformada calculamos la solución:
+{\footnotesize
 $$
-y_1 =\left[ 0 + \mathcal{L}^{-1}\left\{\frac{1}{(z^2+1)( z^2 - 3z + 2)}\right\}_{(t)}\right]  u(t) +  \left[  0 - \mathcal{L}^{-1}\left\{\frac{1}{(z^2+1)( z^2 - 3z + 2)}\right\}_{(-t)} \right] u(-t)
+y=\left[ 0 + \mathcal{L}^{-1}\left\{\frac{1}{(z^2+1)( z^2 - 3z + 2)}\right\}_{(t)}\right]  u(t) +  \left[  0 - \mathcal{L}^{-1}\left\{\frac{1}{(z^2+1)( z^2 - 3z + 2)}\right\}_{(-t)} \right] u(-t)
+$$
+
+$$y= \left[\frac{3}{10}\cos(t)+\frac{1}{10}\sen(t)+\frac{1}{5} e^{2t}-\frac{1}{2} e^t\right] u(t)+ \left[- \frac{3}{10} \cos(-t)-\frac{1}{10}\sen(-t) -\frac{1}{5} e^{-2t} + \frac{1}{2} e^{-t}\right] u(-t)$$
+}\\
+
+\item Sistema  $y'' - 3 y' +2y=\sen(x)$
+
+$$
+y=\overline{T}_{ms}^{-1}\left\{ \frac{1}{\left( z^2 + 3z + 2\right) }  \begin{pmatrix}
+0\\[0.3cm]
+\frac{1}{z^2+1}
+\end{pmatrix}\right\} = \overline{T}_{ms}^{-1}\left\{   \begin{pmatrix}
+0\\[0.3cm]
+\frac{1}{(z^2+1)( z^2 + 3z + 2)}
+\end{pmatrix}\right\} 
+$$
+
+{\footnotesize
+$$
+y =\left[ 0 + \mathcal{L}^{-1}\left\{\frac{1}{(z^2+1)( z^2 + 3z + 2)}\right\}_{(t)}\right]  u(t) +  \left[  0 - \mathcal{L}^{-1}\left\{\frac{1}{(z^2+1)( z^2 + 3z + 2)}\right\}_{(-t)} \right] u(-t)
 $$
 
 
+$$y= \left[\frac{1}{10}\sen(t)-\frac{3}{10}\cos(t)-\frac{1}{5} e^{-2t}+\frac{1}{2} e^{-t}\right] u(t)+ \left[-\frac{1}{10}\sen(-t)+\frac{3}{10}\cos(-t)+\frac{1}{5} e^{2t}-\frac{1}{2} e^{t}\right]u(-t)$$
+}\\
+
+\end{itemize}
+
+\subsubsection{Solución a los sistemas para $\bm{ f_{(x)}=\cos(x)}$}
+
+Calculamos la transformada para $f_{(x)} = \cos(x)$:
+$$
+\overline{T}_{ms}\left\{\cos(x)\right\} = \begin{pmatrix}
+\frac{z}{z^2+1}\\[0.3cm]
+0
+\end{pmatrix}
+$$
+\begin{itemize}
+
+\item Sistema $y'' - 3 y' +2y=\cos(x)$
+
+Resolvemos de igual manera que en el caso aterior
+
+$$
+y=\overline{T}_{ms}^{-1}\left\{ \frac{1}{\left( z^2 - 3z + 2\right) }  \begin{pmatrix}
+\frac{z}{z^2+1}\\[0.3cm]
+0
+\end{pmatrix}\right\} = \overline{T}_{ms}^{-1}\left\{   \begin{pmatrix}
+\frac{z}{(z^2+1)( z^2 - 3z + 2)}\\[0.3cm]
+0
+\end{pmatrix}\right\} 
+$$
+
+{\footnotesize
+$$
+y =\left[ \mathcal{L}^{-1}\left\{\frac{z}{(z^2+1)( z^2 - 3z + 2)}\right\}_{(t)} + 0 \right]  u(t) +  \left[  \mathcal{L}^{-1}\left\{\frac{z}{(z^2+1)( z^2 - 3z + 2)}\right\}_{(-t)} - 0 \right] u(-t)
+$$
+
+
+$$y= \left[\frac{1}{10}\cos(t)-\frac{3}{10}\sen(t)+\frac{2}{5} e^{2t}-\frac{1}{2} e^{t}\right] u(t)+ \left[\frac{1}{10}\cos(-t)-\frac{3}{10}\sen(-t)+\frac{2}{5} e^{-2t}-\frac{1}{2} e^{-t}\right]  u(-t)$$
+}\\
+
+
+
+\item Sistema $y'' + 3 y' +2y=\cos(x)$
+$$
+y_1 =\overline{T}_{ms}^{-1}\left\{ \frac{1}{\left( z^2 - 3z + 2\right) }  \begin{pmatrix}
+\frac{z}{z^2+1}\\[0.3cm]
+0
+\end{pmatrix}\right\} = \overline{T}_{ms}^{-1}\left\{   \begin{pmatrix}
+\frac{z}{(z^2+1)( z^2 - 3z + 2)}\\[0.3cm]
+0
+\end{pmatrix}\right\} 
+$$
+
+{\footnotesize
+$$
+y =\left[ \mathcal{L}^{-1}\left\{\frac{z}{(z^2+1)( z^2 - 3z + 2)}\right\}_{(t)} + 0 \right]  u(t) +  \left[  \mathcal{L}^{-1}\left\{\frac{z}{(z^2+1)( z^2 - 3z + 2)}\right\}_{(-t)} - 0 \right] u(-t)
+$$
+
+
+$$y= \left[\frac{1}{10}\cos(t)+\frac{3}{10}\sen(t)+\frac{2}{5} e^{-2t}-\frac{1}{2} e^{-t}\right] u(t)+ \left[\frac{1}{10}\cos(-t)+\frac{3}{10}\sen(-t)+\frac{2}{5} e^{2t}-\frac{1}{2} e^{t}\right]  u(-t)$$
+}\\
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Solución a los sistemas para $\bm{ f_{(x)}=\sen(x+3)}$}
+
+Calculamos la transformada para $f_{(x)}=\sen(x+3)$:
+$$
+\overline{T}_{ms}\left\{\sen(x+3)\right\} = \begin{pmatrix}
+0\\[0.3cm]
+\frac{e^{3z}}{z^2+1} 
+\end{pmatrix}
+$$
+\begin{itemize}
+
+\item Sistema $y'' - 3 y' +2y=\sen(x+3)$
+
+Resolvemos de igual manera que en el caso aterior
+
+$$
+y=\overline{T}_{ms}^{-1}\left\{ \frac{1}{\left( z^2 - 3z + 2\right) }  \begin{pmatrix}
+0\\[0.3cm]
+\frac{ e^{3z}}{z^2+1}
+\end{pmatrix}\right\} = \overline{T}_{ms}^{-1}\left\{   \begin{pmatrix}
+\frac{e^{3z}}{(z^2+1)( z^2 - 3z + 2)}\\[0.3cm]
+0
+\end{pmatrix}\right\} 
+$$
+
+Utilizando propiedades de la tranformada, en particular el desplazamiento temporal. Podemos determinar la solución del sistema a partir de la solución al sistema \mbox{$y'' - 3 y' +2y=\sen(x)$} previamente calculado.
+
+Sabiendo que la solucióna al sistema es:
+{\footnotesize
+
+$$y= \left[\frac{3}{10}\cos(t)+\frac{1}{10}\sen(t)+\frac{1}{5} e^{2t}-\frac{1}{2} e^t\right] u(t)+ \left[- \frac{3}{10} \cos(-t)-\frac{1}{10}\sen(-t) -\frac{1}{5} e^{-2t} + \frac{1}{2} e^{-t}\right] u(-t)$$
+}
+
+Aplicando propiedad se calcula que la solución al sistema es:
+
+
+{\tiny
+$$y= \left[\frac{1}{10}\cos(t+3)-\frac{3}{10}\sen(t+3)+\frac{2}{5} e^{2(t+3)}-\frac{1}{2} e^{t+3}\right] u(t+3)+ \left[-\frac{1}{10}\cos(-t+3)+\frac{3}{10}\sen(-t+3)-\frac{2}{5} e^{-2(t+3)}+\frac{1}{2} e^{-t+3}\right]  u(-t+3)$$
+}\\
+
+
+
+\item Sistema $y'' + 3 y' +2y=\sen(x+3)$
+$$
+y=\overline{T}_{ms}^{-1}\left\{ \frac{1}{\left( z^2 + 3z + 2\right) }  \begin{pmatrix}
+0\\[0.3cm]
+\frac{ e^{3z}}{z^2+1}
+\end{pmatrix}\right\} = \overline{T}_{ms}^{-1}\left\{   \begin{pmatrix}
+\frac{e^{3z}}{(z^2+1)( z^2 + 3z + 2)}\\[0.3cm]
+0
+\end{pmatrix}\right\} 
+$$
+
+{\footnotesize
+$$y= \left[\frac{1}{10}\sen(t)-\frac{3}{10}\cos(t)-\frac{1}{5} e^{-2t}+\frac{1}{2} e^{-t}\right] u(t)+ \left[-\frac{1}{10}\sen(-t)+\frac{3}{10}\cos(-t)+\frac{1}{5} e^{2t}-\frac{1}{2} e^{t}\right] u(-t)$$
+}
+Aplicando la misma propiedad encontramos que la solución es:
+{\tiny
+$$y= \left[\frac{1}{10}\sen(t+3)-\frac{3}{10}\cos(t+3)-\frac{1}{5} e^{-2(t+3)}+\frac{1}{2} e^{-t+3}\right] u(t+3)+ \left[-\frac{1}{10}\sen(-t+3)+\frac{3}{10}\cos(-t+3)+\frac{1}{5} e^{-2(-t+3)}-\frac{1}{2} e^{t+3}\right] u(-t+3)$$
+}\\
+
+\end{itemize}
+
+\subsection{Condiciones iniciales no nulas}
+
+Para resolver el sistema con condiciones iniciales no nulas se debe expresar a cada derivada de $y$ con su respectiva representación según la ecuación \ref{derivada}.
+
+$$
+\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) =s^n\  \overline{T}_{ms}(f_{(t)})
+- \sum\limits_{k=0}^{k=n-1} s^k
+\begin{pmatrix}
+ (f_{(t)} + f_{(-t)})^{(n-k-1)}_{(0^-)}\\[0.5 cm]
+ (f_{(t)} - f_{(-t)})^{(n-k-1)}_{(0^-)}
+\end{pmatrix}
+$$
+
+Por lo que ahora el procedimiento realizado en la sección \ref{condiciones_iniciales_nulas} debe completarse incluyendo las condiciones iniciales dadas.
+Para facilitar la lectura se calculan previamente las correspondientes derivadas con las condiciones iniciales dadas.
+
+$$
+y''-3y'+2y=f(x) \qquad y(0)=y_0 ; y'(0)=y'_0
+$$
+$$
+y''+3y'+2y=f(x) \qquad y(0)=y_0 ; y'(0)=y'_0
+$$
+
+
+Sea la solución continua y derivable en $x=0$ se puede asegurar que la comoponente y de la sumatoria será nula.
+
+$$
+\overline{T}_{ms}\left(y'\right) =s\  \overline{T}_{ms}(y)
+-
+\begin{pmatrix}
+2y_0 \\[0.5 cm]
+0
+\end{pmatrix}
+$$
+
+$$
+\overline{T}_{ms}\left(y''\right) =z^2\  \overline{T}_{ms}(y)
+-
+\begin{pmatrix}
+2y'_0 \\[0.5 cm]
+0
+\end{pmatrix}
+-z
+\begin{pmatrix}
+2y_0 \\[0.5 cm]
+0
+\end{pmatrix}
+$$
+
+Ahora completamos el procedimiento para el cálculo de la solución en el caso de tener condiciones iniciales no nulas.
+
+$$
+\overline{T}_{ms}\left\{y'' \pm 3y'+2y=f_{(x)}\right\} = \overline{T}_{ms}\left\{f(x)\right\}
+$$
+
+$$
+z^2\  \overline{T}_{ms}\{y\}
+-
+\begin{pmatrix}
+2y'_0 \\[0.3 cm]
+0
+\end{pmatrix}
+-z
+\begin{pmatrix}
+2y_0 \\[0.3cm]
+0
+\end{pmatrix}
+\pm3z\  \overline{T}_{ms}\{y\}
+-
+\begin{pmatrix}
+2y_0 \\[0.3 cm]
+0
+\end{pmatrix}+2\overline{T}_{ms}\{y\} =\overline{T}_{ms}\left\{f(x)\right\}
+$$
+
+Agrupando las condiciones iniciales y las transformadas nos queda
+
+$$
+\overline{T}_{ms}\{y\} (z^2 \pm 3z +2)
+-
+\begin{pmatrix}
+2y'_0 + 2z y_0 \pm 2y_0 \\[0.3 cm]
+0
+\end{pmatrix}
+=\overline{T}_{ms}\left\{f(x)\right\}
+$$
+
+
+$$
+\overline{T}_{ms}\{y\} (z^2 \pm 3z +2)
+=\overline{T}_{ms}\left\{f(x)\right\} +\begin{pmatrix}
+2y'_0 + 2z y_0 \pm 2y_0 \\[0.3 cm]
+0
+\end{pmatrix}
+$$
+
+$$
+\overline{T}_{ms}\{y\} 
+=\frac{1}{(z^2 \pm 3z +2)}\left[\overline{T}_{ms}\left\{f(x)\right\} +\begin{pmatrix}
+2y'_0 + 2z y_0 \pm 2y_0 \\[0.3 cm]
+0
+\end{pmatrix}\right]
+$$
+
+$$
+y = \overline{T}_{ms}^{-1}\left\{\frac{1}{(z^2 \pm 3z +2)}\left[\overline{T}_{ms}\left\{f(x)\right\} +\begin{pmatrix}
+2y'_0 + 2z y_0 \pm 2y_0 \\[0.3 cm]
+0
+\end{pmatrix}\right]\right\}
+$$
+
+Si seguimos operando, llegamos a que la solución del sistema deriva en
+
+$$
+y = \overline{T}_{ms}^{-1}\left\{\frac{1}{(z^2 \pm 3z +2)}\left[\overline{T}_{ms}\left\{f(x)\right\} +\begin{pmatrix}
+2y'_0 + 2z y_0 \pm 2y_0 \\[0.3 cm]
+0
+\end{pmatrix}\right]\right\}
+$$
+
+$$
+y = \overline{T}_{ms}^{-1}\left\{\frac{\overline{T}_{ms}\left\{f(x)\right\} }{(z^2 \pm 3z +2)}\right\}
++\overline{T}_{ms}^{-1}\left\{\begin{pmatrix}
+\frac{2y'_0 + 2z y_0 \pm 2y_0}{(z^2 \pm 3z +2)} \\[0.3 cm]
+0
+\end{pmatrix}\right\}
+$$
+
+Lo cual es igual a la solución con condiciones iniciales nulas sumada a la antitransformada de las condiciones iniciales.
+
+$$
+y = y_{\textrm{cn}}
++\overline{T}_{ms}^{-1}\left\{\begin{pmatrix}
+\frac{2y'_0 + 2z y_0 \pm 2y_0}{(z^2 \pm 3z +2)} \\[0.3 cm]
+0
+\end{pmatrix}\right\}
+$$
+
+A partir de esta ecuación se pueden calcular las soluciones a los sistemas considerando las condiciones iniciales.
 
 \end{document} 
