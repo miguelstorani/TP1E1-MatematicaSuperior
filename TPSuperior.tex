@@ -530,6 +530,7 @@ $$
  (f_{(t)} + f_{(-t)})^{(n-k-1)}_{(0^-)}\\[0.5 cm]
  (f_{(t)} - f_{(-t)})^{(n-k-1)}_{(0^-)}
 \end{pmatrix}
+\label{derivada}
 \end{equation}
 
 En el caso que la función cumpla que $f_{(t)} = 0 \ \forall t < 0$, la expresión quedaría:
@@ -586,9 +587,79 @@ $$
 
 \section{Tabla de transformada de funciones elementales}
 
+\section{Solución de ecuaciones diferenciales}
+
+\subsection{Condiciones iniciales nulas}
+
+$$y''-3y'+2y=f(x)$$
+$$
+y''+3y'+2y=f(x)
+$$
+
+Utilizando la propiedad de la transformada de la derivada expresada en \ref{derivada}, se aplica la transformada a ambos miembros:
+$$
+\overline{T}_{ms}\left\{y''-3y'+2y=f_{(x)}\right\} = \overline{T}_{ms}\left\{f(x)\right\}
+$$
+
+$$
+\overline{T}_{ms}\left\{y''\right\} -3\overline{T}_{ms}\left\{y'\right\} +2\overline{T}_{ms}\left\{y\right\} = \overline{T}_{ms}\left\{f(x)\right\}
+$$
+
+Se aplica la propiedad de la derivada, con condiciones iniciales nulas, por lo que la igualdad quedaría expresada de la siguiente manera:
 
 
+$$z^2 \overline{T}_{ms}\left\{y\right\} - 3z\overline{T}_{ms}\left\{y\right\}+2\overline{T}_{ms}\left\{y\right\} =\overline{T}_{ms}\left\{f(x)\right\}
+$$
 
+Sacando factor común $\overline{T}_{ms}\left\{y\right\}$ en el primer término:
+
+$$
+\overline{T}_{ms}\left\{y\right\} \left( z^2 - 3z + 2\right) = \overline{T}_{ms}\left\{f(x)\right\}
+$$
+
+$$
+\overline{T}_{ms}\left\{y\right\} = \frac{\overline{T}_{ms}\left\{f(x)\right\}}{\left( z^2 - 3z + 2\right) }
+$$
+
+
+$$
+y =\overline{T}_{ms}^{-1}\left\{ \frac{\overline{T}_{ms}\left\{f(x)\right\}}{\left( z^2 - 3z + 2\right) }\right\}
+$$
+
+
+Análogamente para $y''+3y'+2y=f(x)$, la solución sería:
+
+
+$$
+y =\overline{T}_{ms}^{-1}\left\{ \frac{\overline{T}_{ms}\left\{f(x)\right\}}{\left( z^2 + 3z + 2\right) }\right\}
+$$
+
+\subsubsection{Solución a los sistemas para $\bm{ f_{(x)}=\sen(x)}$}
+
+Calculamos la transformada de $f_{(x)}$:
+$$
+\overline{T}_{ms}\left\{\sen(x)\right\} = \begin{pmatrix}
+0\\[0.3cm]
+\frac{1}{z^2+1}
+\end{pmatrix}
+$$
+
+Operamos utilizando la tranformada calculada:
+
+$$
+y_1 =\overline{T}_{ms}^{-1}\left\{ \frac{1}{\left( z^2 - 3z + 2\right) }  \begin{pmatrix}
+0\\[0.3cm]
+\frac{1}{z^2+1}
+\end{pmatrix}\right\} = \overline{T}_{ms}^{-1}\left\{   \begin{pmatrix}
+0\\[0.3cm]
+\frac{1}{(z^2+1)( z^2 - 3z + 2)}
+\end{pmatrix}\right\} 
+$$\\
+
+Utilizando la expresión de la antitransformada calculamos la solución:
+$$
+y_1 =\left[ 0 + \mathcal{L}^{-1}\left\{\frac{1}{(z^2+1)( z^2 - 3z + 2)}\right\}_{(t)}\right]  u(t) +  \left[  0 - \mathcal{L}^{-1}\left\{\frac{1}{(z^2+1)( z^2 - 3z + 2)}\right\}_{(-t)} \right] u(-t)
+$$
 
 
 
