@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.29)  31 MAY 2019 11:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.29)  31 MAY 2019 13:05
 entering extended mode
 **./TPSuperior.tex
 (TPSuperior.tex
@@ -330,19 +330,24 @@ File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 272.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [2]
-Overfull \hbox (12.14911pt too wide) detected at line 340
+File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
+<use ./logos/UTN-FRSF.jpg>
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 357.
+(pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
+ [3]
+Overfull \hbox (12.14911pt too wide) detected at line 400
 [][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 af[] \OT1/cmr/m/n/10.95 + \OML/cmm/
 m/it/10.95 bg[]\OT1/cmr/m/n/10.95 ) = [] []
  []
 
 
-Overfull \hbox (17.93716pt too wide) detected at line 348
+Overfull \hbox (17.93716pt too wide) detected at line 408
 [][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 af[] \OT1/cmr/m/n/10.95 + \OML/cmm/
 m/it/10.95 bg[]\OT1/cmr/m/n/10.95 ) = [] []
  []
 
 
-Overfull \hbox (29.6207pt too wide) detected at line 362
+Overfull \hbox (29.6207pt too wide) detected at line 422
 [][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 af[] \OT1/cmr/m/n/10.95 + \OML/cmm/
 m/it/10.95 bg[]\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 a[] [] \OT1/cmr/m/n/1
 0.95 + \OML/cmm/m/it/10.95 b[] []
@@ -350,10 +355,10 @@ m/it/10.95 bg[]\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 a[] [] \OT1/cmr/m/n/1
 
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 374.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 450.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
-[3]
-Overfull \hbox (23.73146pt too wide) in paragraph at lines 415--416
+[4]
+Overfull \hbox (23.73146pt too wide) in paragraph at lines 475--476
 []\OT1/cmr/m/n/12 Esta pro-pie-dad solo de man-tie-ne pa-ra fun-cio-nes $\OML/
 cmm/m/it/12 f$ \OT1/cmr/m/n/12 y $\OML/cmm/m/it/12 g$ \OT1/cmr/m/n/12 tal que [
 ] y [].
@@ -361,23 +366,23 @@ cmm/m/it/12 f$ \OT1/cmr/m/n/12 y $\OML/cmm/m/it/12 g$ \OT1/cmr/m/n/12 tal que [
 
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 473.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 533.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
-[4] 
+[5] 
 AED: lastpage setting LastPage
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 533.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 595.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
-[5] (TPSuperior.aux
+[6] (TPSuperior.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 4040 strings out of 492895
- 54606 string characters out of 3133476
- 143502 words of memory out of 3000000
- 7861 multiletter control sequences out of 15000+200000
+ 4043 strings out of 492895
+ 54656 string characters out of 3133476
+ 143529 words of memory out of 3000000
+ 7864 multiletter control sequences out of 15000+200000
  17672 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,15n,43p,294b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -399,9 +404,9 @@ c/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10
 .pfb>
-Output written on TPSuperior.pdf (7 pages, 270436 bytes).
+Output written on TPSuperior.pdf (8 pages, 274105 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
+ 109 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

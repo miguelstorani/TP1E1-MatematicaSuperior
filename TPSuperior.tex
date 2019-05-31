@@ -181,18 +181,18 @@ $$
 Resolviendo separadamente el segundo término de la expresión, aplicando un cambio de variable tal que $t=-v$ tenemos que:
 
 $$ \int\limits_{-\infty}^{0} f(t) e^{-z (-t)}dt \Rightarrow - \int\limits_{\infty}^{0} f(-v) e^{-z (v)}dv =  \int\limits_{0}^{\infty} f(-v) e^{-z (v)}dv $$
-$$\int\limits_{0}^{\infty} f(-v) e^{-z (v)}dv = \mathcal{L}\left\{f(-v) u(v)\right\}_{(s)}$$
+$$\int\limits_{0}^{\infty} f(-v) e^{-z (v)}dv = \mathcal{L}\left\{f(-v) u(v)\right\}_{(z)}$$
 
 Por propiedad de simetría de la transformada de Laplace, se puede expresar la siguiente igualdad:
  \begin{equation}
- \int\limits_{-\infty}^{0} f(t) e^{-z (-t)}dt = \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)} 
+ \int\limits_{-\infty}^{0} f(t) e^{-z (-t)}dt = \mathcal{L}\left\{f(t)u(-t)\right\}_{(-z)} 
  \label{segundo_termino}
  \end{equation}
  
 Lo cual representa un cambio de la variable compleja, por la misma variable compleja aplicando un factor de $-1$. Reemplazando \ref{segundo_termino} en \ref{primer_componente} obtenemos que:
 
 \begin{equation}
-\int\limits_{-\infty}^{\infty} f_{(t)} e^{-z |t|}dt= \mathcal{L}\left\{f(t)u(t)\right\}_{(s)} +  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)}
+\int\limits_{-\infty}^{\infty} f_{(t)} e^{-z |t|}dt= \mathcal{L}\left\{f(t)u(t)\right\}_{(z)} +  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-z)}
 \label{primer_componente_final}
 \end{equation}
 
@@ -211,13 +211,13 @@ $$\int\limits_{-\infty}^{\infty} f_{(t)} (u(t) -u(-t))e^{-z |t|}dt =  \int\limit
 \end{equation}
 
 El segundo término se puede expresar como:
-\begin{equation} \int\limits_{-\infty}^{\infty} f_{(t)}u(-t) e^{-z |t|}dt = \int\limits_{-\infty}^{0} f(t) e^{-z (-t)}dt \Rightarrow  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)}
+\begin{equation} \int\limits_{-\infty}^{\infty} f_{(t)}u(-t) e^{-z |t|}dt = \int\limits_{-\infty}^{0} f(t) e^{-z (-t)}dt \Rightarrow  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-z)}
 \label{transformada_segundo_termino}
 \end{equation}
 
 Expresión para la que ya hemos hayado una expresión en función de transformadas conocidas, por lo que la segunda componente de nuestra tranformada quedaría de reemplazar \ref{transformada_segundo_termino} en \ref{transformada_a_la_mitad}:
  \begin{equation}
- \int\limits_{-\infty}^{\infty} f_{(t)} \textrm{sign}(t)e^{-z |t|}dt =    \mathcal{L}\left\{f(t)u(t)\right\}_{(s)} -  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)}
+ \int\limits_{-\infty}^{\infty} f_{(t)} \textrm{sign}(t)e^{-z |t|}dt =    \mathcal{L}\left\{f(t)u(t)\right\}_{(z)} -  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-z)}
  \label{segunda_componente_final}
  \end{equation}
 
@@ -227,8 +227,8 @@ Luego de haber calculado ambas componentes, reemplazamos \ref{primer_componente_
 \begin{equation}
 \overline{T}_{ms}(f_{(t)}) = \frac12
 \begin{pmatrix}
-\mathcal{L}\left\{f(t)u(t)\right\}_{(s)} +  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)}\\[0.2 cm]
-\mathcal{L}\left\{f(t)u(t)\right\}_{(s)} -  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)} 
+\mathcal{L}\left\{f(t)u(t)\right\}_{(z)} +  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-z)}\\[0.2 cm]
+\mathcal{L}\left\{f(t)u(t)\right\}_{(z)} -  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-z)} 
 \end{pmatrix} =  \frac12
 \begin{pmatrix}
 \mathcal{L}_u\left\{f(t) + f(-t)\right\}\\[0.2 cm]
@@ -290,14 +290,74 @@ $$
 
 $$
 \begin{cases}
-\mathcal{L}^{-1}\left\{2 T_x\right\} u(t) =(f(t) + f(-t)) u(t)\\[0.2 cm]
-\mathcal{L}^{-1}\left\{2 T_y\right\} u(t) =  (f(t) -f(-t)) u(t)
+2 \mathcal{L}^{-1}\left\{ T_x\right\}_{(t)} u(t)=f(t)u(t) + f(-t)u(t)\\[0.2 cm]
+2 \mathcal{L}^{-1}\left\{T_y\right\}_{(t)} u(t)=f(t)u(t) -f(-t)u(t)
 \end{cases}
 $$
 
+En este paso debemos tomar dos caminos, uno para recomponer la función en el inervalo donde $t\ge 0$, y otro para cuando $t<0$. Empezamos reconstruyendo el camino donde $t \ge 0$:
 
+Despejando $f_{(-t)}$ de ambas ecuaciones, para después igualarlas tenemos que:
 
+$$
+\begin{cases}
+f(-t)u(t) = 2 \mathcal{L}^{-1}\left\{ T_x\right\}_{(t)} u(t) - f(t)u(t)\\
+f(-t)u(t) = -\left[2 \mathcal{L}^{-1}\left\{T_y\right\}_{(t)} u(t) - f(t)u(t)\right]
+\end{cases}
+$$
 
+Igualando las ecuaciones nos queda:
+
+$$
+-\left[2 \mathcal{L}^{-1}\left\{T_y\right\}_{(t)} u(t) - f(t)u(t)\right] = 2 \mathcal{L}^{-1}\left\{ T_x\right\}_{(t)} u(t) - f(t)u(t)
+$$
+
+$$
+-2 \mathcal{L}^{-1}\left\{T_y\right\}_{(t)} u(t) + f(t)u(t) = 2 \mathcal{L}^{-1}\left\{ T_x\right\}_{(t)} u(t) - f(t)u(t)  
+$$
+
+$$
+2 f(t)u(t) = 2 \mathcal{L}^{-1}\left\{ T_x\right\}_{(t)} u(t) + 2 \mathcal{L}^{-1}\left\{T_y\right\}_{(t)} u(t) 
+$$
+
+\begin{equation}
+f(t)u(t) = \left[ \mathcal{L}^{-1}\left\{ T_x\right\}_{(t)}+ \mathcal{L}^{-1}\left\{T_y\right\}_{(t)}\right]  u(t)
+\label{parte_positiva}
+\end{equation}
+
+Similarmete acomo resolvimos la parte donde $t \ge 0$, resolvemos ahora para cuando $ t < 0$:
+
+$$
+\begin{cases}
+f(t)u(t) = 2 \mathcal{L}^{-1}\left\{T_x\right\}_{(t)} u(t) - f(-t)u(t)\\
+f(t)u(t) = 2 \mathcal{L}^{-1}\left\{T_y\right\}_{(t)} u(t) + f(-t)u(t)
+\end{cases}
+$$
+
+$$
+2 \mathcal{L}^{-1}\left\{T_y\right\}_{(t)} u(t) + f(-t)u(t) = 2 \mathcal{L}^{-1}\left\{T_x\right\}_{(t)} u(t) - f(-t)u(t)
+$$
+
+$$
+2 f(-t)u(t) = 2 \mathcal{L}^{-1}\left\{T_x\right\}_{(t)} u(t) + 2 \mathcal{L}^{-1}\left\{T_y\right\}_{(t)} u(t)
+$$
+
+$$
+ f(-t)u(t) =  \left[\mathcal{L}^{-1}\left\{T_x\right\}_{(t)}  - \mathcal{L}^{-1}\left\{T_y\right\}_{(t)} \right] u(t)
+$$
+
+Hacemos un cambio de variable para poder expresar a la función como $f_{(t)}$, lo cual nos quedaría como:
+\begin{equation}
+ f(t)u(-t) =  \left[\mathcal{L}^{-1}\left\{T_x\right\}_{(-t)}  - \mathcal{L}^{-1}\left\{T_y\right\}_{(-t)} \right] u(-t)
+\label{parte_negativa}
+\end{equation}
+
+Tomando ahora las expresiones \ref{parte_positiva} y \ref{parte_negativa}, juntas nos definen la función original de la siguiente manera:
+
+\begin{equation}
+ f(t) = \left[ \mathcal{L}^{-1}\left\{ T_x\right\}_{(t)}+ \mathcal{L}^{-1}\left\{T_y\right\}_{(t)}\right]  u(t) +  \left[\mathcal{L}^{-1}\left\{T_x\right\}_{(-t)}  - \mathcal{L}^{-1}\left\{T_y\right\}_{(-t)} \right] u(-t)
+\label{antitransformada}
+\end{equation}
 
 
 \section{Propiedades de la nueva transformada}
@@ -523,6 +583,8 @@ $$\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) =s^n\  \overline{T}_{ms
  (f_{(t)} - f_{(-t)})^{(n-k-1)}_{(0^-)}
 \end{pmatrix}
 $$
+
+\section{Tabla de transformada de funciones elementales}
 
 
 

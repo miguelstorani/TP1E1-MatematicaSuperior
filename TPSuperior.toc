@@ -2,8 +2,9 @@
 \contentsline {section}{\numberline {1}Expresar la nueva transformada en funci\IeC {\'o}n de transformadas conocidas}{1}% 
 \contentsline {section}{\numberline {2}Condiciones necesarias y suficientes para garantizar la existencia de la tranformada}{2}% 
 \contentsline {section}{\numberline {3}Antitransformada}{2}% 
-\contentsline {section}{\numberline {4}Propiedades de la nueva transformada}{3}% 
-\contentsline {subsection}{\numberline {4.1}Linealidad}{3}% 
-\contentsline {subsection}{\numberline {4.2}Desplazamineto temporal}{4}% 
-\contentsline {subsection}{\numberline {4.3}Convoluci\IeC {\'o}n}{4}% 
-\contentsline {subsection}{\numberline {4.4}Derivada temporal}{5}% 
+\contentsline {section}{\numberline {4}Propiedades de la nueva transformada}{4}% 
+\contentsline {subsection}{\numberline {4.1}Linealidad}{4}% 
+\contentsline {subsection}{\numberline {4.2}Desplazamineto temporal}{5}% 
+\contentsline {subsection}{\numberline {4.3}Convoluci\IeC {\'o}n}{5}% 
+\contentsline {subsection}{\numberline {4.4}Derivada temporal}{6}% 
+\contentsline {section}{\numberline {5}Tabla de transformada de funciones elementales}{6}% 
