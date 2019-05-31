@@ -1,9 +1,9 @@
 \babel@toc {spanish}{}
-\contentsline {section}{\numberline {1}Ejercicios}{1}% 
-\contentsline {subsection}{\numberline {1.1}Expresar la nueva transformada en funci\IeC {\'o}n de transformadas conocidas}{1}% 
-\contentsline {subsection}{\numberline {1.2}Condiciones necesarias y suficientes para garantizar la existencia de la tranformada}{2}% 
-\contentsline {subsection}{\numberline {1.3}Propiedades de la nueva transformada}{2}% 
-\contentsline {subsubsection}{\numberline {1.3.1}Linealidad}{3}% 
-\contentsline {subsubsection}{\numberline {1.3.2}Desplazamineto temporal}{3}% 
-\contentsline {subsubsection}{\numberline {1.3.3}Convoluci\IeC {\'o}n (deprecated)}{4}% 
-\contentsline {subsubsection}{\numberline {1.3.4}Derivada temporal}{4}% 
+\contentsline {section}{\numberline {1}Expresar la nueva transformada en funci\IeC {\'o}n de transformadas conocidas}{1}% 
+\contentsline {section}{\numberline {2}Condiciones necesarias y suficientes para garantizar la existencia de la tranformada}{2}% 
+\contentsline {section}{\numberline {3}Antitransformada}{2}% 
+\contentsline {section}{\numberline {4}Propiedades de la nueva transformada}{3}% 
+\contentsline {subsection}{\numberline {4.1}Linealidad}{3}% 
+\contentsline {subsection}{\numberline {4.2}Desplazamineto temporal}{4}% 
+\contentsline {subsection}{\numberline {4.3}Convoluci\IeC {\'o}n}{4}% 
+\contentsline {subsection}{\numberline {4.4}Derivada temporal}{5}% 

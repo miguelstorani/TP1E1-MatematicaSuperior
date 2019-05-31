@@ -58,8 +58,8 @@ Clara Mazzi, Miguel Storani}
 
 
 \fancyfoot[R] {\thepage \textnormal{ de} \pageref{LastPage}}
-\fancyfoot[C]{Mazzi, María Clara \hspace{1cm} Storani, Miguel Ignacio}
-\fancyfoot[L]{2019}
+\fancyfoot[L]{\textsc{Storani}, Miguel Ignacio}
+\fancyfoot[C]{2019}
 %---------------------------------------------------------
 
 
@@ -158,9 +158,8 @@ kjdfhgjhsdfjkvbnsjkfdvbkjfdbv
 %############################
 
 
-\section{Ejercicios}
 
-\subsection{Expresar la nueva transformada en función de transformadas conocidas}
+\section{Expresar la nueva transformada en función de transformadas conocidas}
 
 \begin{equation}
 \overline{T}_{ms}(f_{(t)}) = \frac12
@@ -229,12 +228,16 @@ Luego de haber calculado ambas componentes, reemplazamos \ref{primer_componente_
 \overline{T}_{ms}(f_{(t)}) = \frac12
 \begin{pmatrix}
 \mathcal{L}\left\{f(t)u(t)\right\}_{(s)} +  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)}\\[0.2 cm]
-\mathcal{L}\left\{f(t)u(t)\right\}_{(s)} -  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)}
+\mathcal{L}\left\{f(t)u(t)\right\}_{(s)} -  \mathcal{L}\left\{f(t)u(-t)\right\}_{(-s)} 
+\end{pmatrix} =  \frac12
+\begin{pmatrix}
+\mathcal{L}_u\left\{f(t) + f(-t)\right\}\\[0.2 cm]
+\mathcal{L}_u\left\{f(t) -f(-t)\right\}
 \end{pmatrix}
 \label{transformada_con_laplace}
 \end{equation}
 
-\subsection{Condiciones necesarias y suficientes para garantizar la existencia de la tranformada}
+\section{Condiciones necesarias y suficientes para garantizar la existencia de la tranformada}
 
 Para asegurar la existencia de la transformada se debe cumplir que exista la transformada de Laplace para la función estudiada. Existe la transformada $\overline{T}_{ms}(f_{(t)})$ siempre que $f_{(t)}$ sea una función que cumple que:
 
@@ -245,13 +248,65 @@ Para asegurar la existencia de la transformada se debe cumplir que exista la tra
 \end{itemize}
 
 
-\subsection{Propiedades de la nueva transformada}
+\section{Antitransformada}
+
+Para reconstruir la función original a partir de la transformada, tomamos las componentes en $x$ e $y$ de la transformada por separado, siendo:
+
+$$\overline{T}_{ms}(f_{(t)}) =
+\begin{pmatrix}
+T_x\\
+T_y
+\end{pmatrix}
+$$
+
+
+$$\overline{T}_{ms}(f_{(t)}) =
+\begin{pmatrix}
+T_x\\
+T_y
+\end{pmatrix} =\frac12
+\begin{pmatrix}
+\mathcal{L}_u\left\{f(t) + f(-t)\right\}\\[0.2 cm]
+\mathcal{L}_u\left\{f(t) -f(-t)\right\}
+\end{pmatrix}
+$$
+
+
+Para reconstruir $f_{(t)}$ se debe resolver el sistema de ecuaciones:
+$$
+\begin{cases}
+T_x =\frac12 \mathcal{L}_u\left\{f(t) + f(-t)\right\}\\[0.2 cm]
+T_y = \frac12 \mathcal{L}_u\left\{f(t) -f(-t)\right\}
+\end{cases}
+$$
+
+
+$$
+\begin{cases}
+\mathcal{L}_u^{-1}\left\{2 T_x\right\} =(f(t) + f(-t)) u(t)\\[0.2 cm]
+\mathcal{L}_u^{-1}\left\{2 T_y\right\} =  (f(t) -f(-t)) u(t)
+\end{cases}
+$$
+
+$$
+\begin{cases}
+\mathcal{L}^{-1}\left\{2 T_x\right\} u(t) =(f(t) + f(-t)) u(t)\\[0.2 cm]
+\mathcal{L}^{-1}\left\{2 T_y\right\} u(t) =  (f(t) -f(-t)) u(t)
+\end{cases}
+$$
+
+
+
+
+
+
+\section{Propiedades de la nueva transformada}
 
 
 Se demuestran algunas propiedades de la nueva transformada, tomando como base las propiedades de la transformada de Laplace:
 
 
-\subsubsection{Linealidad}
+\subsection{Linealidad}
 
 \begin{equation}
  \overline{T}_{ms}(a f_{(t)} + b g_{(t)}) = a \overline{T}_{ms}(f_{(t)}) + b  \overline{T}_{ms}(g_{(t)})
@@ -311,7 +366,7 @@ $$
 \therefore \overline{T}_{ms}(a f_{(t)} + b g_{(t)}) = a \overline{T}_{ms}(f_{(t)}) + b  \overline{T}_{ms}(g_{(t)})
 $$
 
-\subsubsection{Desplazamineto temporal}
+\subsection{Desplazamineto temporal}
 
 \begin{equation}
  \overline{T}_{ms}(f_{(t-a)}) = \overline{T}_{ms}(f_{(t)}) e^{-at}
@@ -355,42 +410,69 @@ $$
 \therefore \overline{T}_{ms}(f_{(t-a)}) = \overline{T}_{ms}(f_{(t)}) e^{-at}
 $$
 
-\subsubsection{Convolución (deprecated)}
-\begin{equation}
+\subsection{Convolución}
+
+Esta propiedad sólo de mantiene para funciones $f$ y $g$ tal que  \makebox{$f(t) = 0 \ \forall t < 0$} y  \makebox{$g(t) = 0 \ \forall t < 0$}. Debido a estas restricciones podemos expresar nuestra tranformada en función de la tranformada unilteral de Laplace.
+
+$$
 \overline{T}_{ms}(f_{(t)} * g_{(t)}) = \frac12
 \begin{pmatrix}
-\mathcal{L}\left\{[f_{(t)} * g_{(t)}]u(t)\right\}_{(s)} +  \mathcal{L}\left\{[f_{(t)} * g_{(t)}]u(-t)\right\}_{(-s)}\\[0.2 cm]
-\mathcal{L}\left\{[f_{(t)} * g_{(t)}]u(t)\right\}_{(s)} -  \mathcal{L}\left\{[f_{(t)} * g_{(t)}]u(-t)\right\}_{(-s)}
+\mathcal{L}_u\left\{(f_{(t)} * g_{(t)}) + (f_{(-t)} * g_{(-t)})\right\}\\[0.2 cm]
+\mathcal{L}_u\left\{(f_{(t)} * g_{(t)}) - (f_{(-t)} * g_{(-t)})\right\}
+\end{pmatrix}
+$$
+
+Sea $f(t)$ par, dado que $f(t) = f(-t)$, se puede escribir la transformada de la siguiente manera:
+
+$$
+\overline{T}_{ms}(f_{(t)} * g_{(t)}) = \frac12
+\begin{pmatrix}
+\mathcal{L}_u\left\{(f_{(t)} * g_{(t)}) + (f_{(t)} * g_{(-t)})\right\}\\[0.2 cm]
+\mathcal{L}_u\left\{(f_{(t)} * g_{(t)}) - (f_{(t)} * g_{(-t)})\right\}
+\end{pmatrix}
+$$
+
+Por propiedad de la convolución se sabe que $f * (g +h) = (f*g) + (f*h)$, por lo que se puede reducir la expresión de la transformada aplicando esta propiedad.
+$$
+\overline{T}_{ms}(f_{(t)} * g_{(t)}) = \frac12
+\begin{pmatrix}
+\mathcal{L}_u\left\{(f_{(t)} * (g_{(t)}+ g_{(-t)})\right\}\\[0.2 cm]
+\mathcal{L}_u\left\{(f_{(t)} * ( g_{(t)} - g_{(-t)})\right\}
+\end{pmatrix}
+$$
+
+$$
+\overline{T}_{ms}(f_{(t)} * g_{(t)}) = \frac12
+\begin{pmatrix}
+\mathcal{L}_u\left\{(f_{(t)} \right\} \mathcal{L}_u\left\{ g_{(t)}+ g_{(-t)}\right\}\\[0.2 cm]
+\mathcal{L}_u\left\{(f_{(t)} \right\} \mathcal{L}_u\left\{ g_{(t)} - g_{(-t)}\right\}
+\end{pmatrix}
+$$
+
+$$
+\overline{T}_{ms}(f_{(t)} * g_{(t)}) = \frac12
+\begin{pmatrix}
+ \mathcal{L}_u\left\{ g_{(t)}+ g_{(-t)}\right\}\\[0.2 cm]
+\mathcal{L}_u\left\{ g_{(t)} - g_{(-t)}\right\}
+\end{pmatrix} \mathcal{L}_u\left\{(f_{(t)} \right\}  =\overline{T}_{ms}( g_{(t)})  \mathcal{L}_u\left\{(f_{(t)} \right\}
+$$
+
+$$
+\therefore \overline{T}_{ms}(f_{(t)} * g_{(t)}) =\overline{T}_{ms}( g_{(t)})  \mathcal{L}_u\left\{(f_{(t)} \right\}
+$$
+
+
+\subsection{Derivada temporal}
+
+\begin{equation}\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) =s^n\  \overline{T}_{ms}(f_{(t)})
+- \sum\limits_{k=0}^{k=n-1} s^k
+\begin{pmatrix}
+ (f_{(t)} + f_{(-t)})^{(n-k-1)}_{(0^-)}\\[0.5 cm]
+ (f_{(t)} - f_{(-t)})^{(n-k-1)}_{(0^-)}
 \end{pmatrix}
 \end{equation}
 
-\subsubsection{Derivada temporal}
-
-Esta propiedad sólo se cumple para toda función que cumpla $f(t) = 0 \ \forall t < 0$, por lo que se puede utilizar la transformada unilateral de Laplace.
-
-$$
-\overline{T}_{ms}(f_{(t)}) = \frac12
-\begin{pmatrix}
-\mathcal{L}_u\left\{f(t)u(t)\right\}_{(s)} +  0\\[0.2 cm]
-\mathcal{L}_u\left\{f(t)u(t)\right\}_{(s)} - 0
-\end{pmatrix}
-$$
-
-\bfseries{Demostración:}
-
-$$\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) = \frac12
-\begin{pmatrix}
-\mathcal{L}_u\left\{\frac{d^n f_{(t)}}{dt^n}\right\}\\[0.2 cm]
-\mathcal{L}_u\left\{\frac{d^n f_{(t)}}{dt^n}\right\}
-\end{pmatrix}
-$$
-
-$$\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) = \frac12
-\begin{pmatrix}
-s^n\mathcal{L}_u\left\{f_{(t)}\right\} -\sum\limits_{k=0}^{k=n-1} s^k f^{(n-k-1)}_{(0^-)}\\[0.5 cm]
-s^n\mathcal{L}_u\left\{f_{(t)}\right\} -\sum\limits_{k=0}^{k=n-1} s^k f^{(n-k-1)}_{(0^-)}
-\end{pmatrix}
-$$
+En el caso que la función cumpla que $f_{(t)} = 0 \ \forall t < 0$, la expresión quedaría:
 
 $$\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) = \frac12 s^n\mathcal{L}_u\left\{f_{(t)}\right\} -\sum\limits_{k=0}^{k=n-1} s^k f^{(n-k-1)}_{(0^-)}
 \begin{pmatrix}
@@ -399,8 +481,52 @@ $$\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) = \frac12 s^n\mathcal{L
 \end{pmatrix}
 $$
 
+{\bfseries Demostración:}
 
-La transformada
+$$\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) = \frac12
+\begin{pmatrix}
+\mathcal{L}_u\left\{\frac{d^n f_{(t)}}{dt^n} + \frac{d^n f_{(-t)}}{dt^n}\right\}\\[0.2 cm]
+\mathcal{L}_u\left\{\frac{d^n f_{(t)}}{dt^n} - \frac{d^n f_{(-t)}}{dt^n}\right\}
+\end{pmatrix}
+$$
+
+$$\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) = \frac12
+\begin{pmatrix}
+\mathcal{L}_u\left\{\frac{d^n (f_{(t)} +f_{(-t)})}{dt^n}\right\}\\[0.2 cm]
+\mathcal{L}_u\left\{\frac{d^n (f_{(t)}- f_{(-t)})}{dt^n}\right\}
+\end{pmatrix}
+$$
+
+$$\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) = \frac12
+\begin{pmatrix}
+s^n\mathcal{L}_u\left\{(f_{(t)} + f_{(-t)})\right\} -\sum\limits_{k=0}^{k=n-1} s^k (f_{(t)} + f_{(-t)})^{(n-k-1)}_{(0^-)}\\[0.5 cm]
+s^n\mathcal{L}_u\left\{(f_{(t)} - f_{(-t)})\right\} -\sum\limits_{k=0}^{k=n-1} s^k (f_{(t)} - f_{(-t)})^{(n-k-1)}_{(0^-)}
+\end{pmatrix}
+$$
+
+$$\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) =s^n \frac12
+\begin{pmatrix}
+\mathcal{L}_u\left\{(f_{(t)} + f_{(-t)})\right\} \\[0.5 cm]
+\mathcal{L}_u\left\{(f_{(t)} - f_{(-t)})\right\} 
+\end{pmatrix}
+- \sum\limits_{k=0}^{k=n-1} s^k
+\begin{pmatrix}
+ (f_{(t)} + f_{(-t)})^{(n-k-1)}_{(0^-)}\\[0.5 cm]
+ (f_{(t)} - f_{(-t)})^{(n-k-1)}_{(0^-)}
+\end{pmatrix}
+$$
+
+$$\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) =s^n\  \overline{T}_{ms}(f_{(t)})
+- \sum\limits_{k=0}^{k=n-1} s^k
+\begin{pmatrix}
+ (f_{(t)} + f_{(-t)})^{(n-k-1)}_{(0^-)}\\[0.5 cm]
+ (f_{(t)} - f_{(-t)})^{(n-k-1)}_{(0^-)}
+\end{pmatrix}
+$$
+
+
+
+
 
 
 
