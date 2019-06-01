@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.29)  31 MAY 2019 23:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.29)  1 JUN 2019 00:38
 entering extended mode
 **./TPSuperior.tex
 (TPSuperior.tex
@@ -219,12 +219,354 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/background\background.sty
+Package: background 2014/03/04 v2.1 background material
+("C:\Program Files\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
+\XKV@toks=\toks25
+\XKV@tempa@toks=\toks26
+)
+\XKV@depth=\count111
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/frontendlayer\tikz.st
+y (C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgfrcs.sty
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-c
+ommon.tex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen138
+\pgfutil@tempdimb=\dimen139
+
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-c
+ommon-lists.tex))
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-l
+atex.def
+\pgfutil@abb=\box32
+ (C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/ms\everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfrcs.co
+de.tex
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2019/05/09 v3.1.3 (3.1.3)
+))
+Package: pgf 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/basiclayer\pgfcore.st
+y
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/systemlayer\pgfsys.st
+y
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys.
+code.tex
+Package: pgfsys 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeys.c
+ode.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeysfi
+ltered.code.tex
+\pgfkeys@tmptoks=\toks30
+))
+\pgf@x=\dimen140
+\pgf@y=\dimen141
+\pgf@xa=\dimen142
+\pgf@ya=\dimen143
+\pgf@xb=\dimen144
+\pgf@yb=\dimen145
+\pgf@xc=\dimen146
+\pgf@yc=\dimen147
+\pgf@xd=\dimen148
+\pgf@yd=\dimen149
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count112
+\c@pgf@countb=\count113
+\c@pgf@countc=\count114
+\c@pgf@countd=\count115
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+\pgf@sys@id@count=\count116
+
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2019/05/09 v3.1.3 (3.1.3)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys-
+pdftex.def
+File: pgfsys-pdftex.def 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys-
+common-pdf.def
+File: pgfsys-common-pdf.def 2019/05/09 v3.1.3 (3.1.3)
+)))
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsyss
+oftpath.code.tex
+File: pgfsyssoftpath.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfsyssoftpath@smallbuffer@items=\count117
+\pgfsyssoftpath@bigbuffer@items=\count118
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsysp
+rotocol.code.tex
+File: pgfsysprotocol.code.tex 2019/05/09 v3.1.3 (3.1.3)
+))
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcore.
+code.tex
+Package: pgfcore 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.t
+ex
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathcalc.co
+de.tex
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathutil.co
+de.tex)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathparser.
+code.tex
+\pgfmath@dimen=\dimen150
+\pgfmath@count=\count119
+\pgfmath@box=\box33
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.code.tex
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.basic.code.tex)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.trigonometric.code.tex)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.random.code.tex)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.comparison.code.tex)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.base.code.tex)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.round.code.tex)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.misc.code.tex)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctio
+ns.integerarithmetics.code.tex)))
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfloat.c
+ode.tex
+\c@pgfmathroundto@lastzeros=\count120
+))
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfint.code.te
+x)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorep
+oints.code.tex
+File: pgfcorepoints.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@picminx=\dimen151
+\pgf@picmaxx=\dimen152
+\pgf@picminy=\dimen153
+\pgf@picmaxy=\dimen154
+\pgf@pathminx=\dimen155
+\pgf@pathmaxx=\dimen156
+\pgf@pathminy=\dimen157
+\pgf@pathmaxy=\dimen158
+\pgf@xx=\dimen159
+\pgf@xy=\dimen160
+\pgf@yx=\dimen161
+\pgf@yy=\dimen162
+\pgf@zx=\dimen163
+\pgf@zy=\dimen164
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorep
+athconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@path@lastx=\dimen165
+\pgf@path@lasty=\dimen166
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorep
+athusage.code.tex
+File: pgfcorepathusage.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@shorten@end@additional=\dimen167
+\pgf@shorten@start@additional=\dimen168
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcores
+copes.code.tex
+File: pgfcorescopes.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfpic=\box34
+\pgf@hbox=\box35
+\pgf@layerbox@main=\box36
+\pgf@picture@serial@count=\count121
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreg
+raphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgflinewidth=\dimen169
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoret
+ransformations.code.tex
+File: pgfcoretransformations.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@pt@x=\dimen170
+\pgf@pt@y=\dimen171
+\pgf@pt@temp=\dimen172
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreq
+uick.code.tex
+File: pgfcorequick.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreo
+bjects.code.tex
+File: pgfcoreobjects.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorep
+athprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorea
+rrows.code.tex
+File: pgfcorearrows.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfarrowsep=\dimen173
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcores
+hade.code.tex
+File: pgfcoreshade.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@max=\dimen174
+\pgf@sys@shading@range@num=\count122
+\pgf@shadingcount=\count123
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorei
+mage.code.tex
+File: pgfcoreimage.code.tex 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoree
+xternal.code.tex
+File: pgfcoreexternal.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfexternal@startupbox=\box37
+))
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorel
+ayers.code.tex
+File: pgfcorelayers.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoret
+ransparency.code.tex
+File: pgfcoretransparency.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorep
+atterns.code.tex
+File: pgfcorepatterns.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorer
+df.code.tex
+File: pgfcorerdf.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)))
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulesh
+apes.code.tex
+File: pgfmoduleshapes.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfnodeparttextbox=\box38
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulepl
+ot.code.tex
+File: pgfmoduleplot.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp
+-version-0-65.sty
+Package: pgfcomp-version-0-65 2019/05/09 v3.1.3 (3.1.3)
+\pgf@nodesepstart=\dimen175
+\pgf@nodesepend=\dimen176
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp
+-version-1-18.sty
+Package: pgfcomp-version-1-18 2019/05/09 v3.1.3 (3.1.3)
+))
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgffor.sty
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgfkeys.sty
+
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeys.c
+ode.tex))
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.t
+ex))
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgffor.co
+de.tex
+Package: pgffor 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.t
+ex)
+\pgffor@iter=\dimen177
+\pgffor@skip=\dimen178
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
+))
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz\
+tikz.code.tex
+Package: tikz 2019/05/09 v3.1.3 (3.1.3)
+
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgflibrar
+yplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@plot@mark@count=\count124
+\pgfplotmarksize=\dimen179
+)
+\tikz@lastx=\dimen180
+\tikz@lasty=\dimen181
+\tikz@lastxsaved=\dimen182
+\tikz@lastysaved=\dimen183
+\tikzleveldistance=\dimen184
+\tikzsiblingdistance=\dimen185
+\tikz@figbox=\box39
+\tikz@figbox@bg=\box40
+\tikz@tempbox=\box41
+\tikz@tempbox@bg=\box42
+\tikztreelevel=\count125
+\tikznumberofchildren=\count126
+\tikznumberofcurrentchild=\count127
+\tikz@fig@count=\count128
+
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulema
+trix.code.tex
+File: pgfmodulematrix.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgfmatrixcurrentrow=\count129
+\pgfmatrixcurrentcolumn=\count130
+\pgf@matrix@numberofcolumns=\count131
+)
+\tikz@expandcount=\count132
+
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/
+libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)))
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/everypage\everypage.sty
+Package: everypage 2007/06/20 1.1 Hooks to run on every page
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\afterpage.sty"
+Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
+\AP@output=\toks39
+\AP@partial=\box43
+\AP@footins=\box44
+))
 (C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/vmargin\vmargin.sty
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
-\PaperWidth=\dimen138
-\PaperHeight=\dimen139
+\PaperWidth=\dimen186
+\PaperHeight=\dimen187
 ) (C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
@@ -239,37 +581,37 @@ s
 \f@nch@O@orf=\skip57
 )
 (TPSuperior.aux
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
 )
 \openout1 = `TPSuperior.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
 
 (C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count111
-\scratchdimen=\dimen140
-\scratchbox=\box32
-\nofMPsegments=\count112
-\nofMParguments=\count113
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count114
-\MPscratchDim=\dimen141
-\MPnumerator=\count115
-\makeMPintoPDFobject=\count116
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count133
+\scratchdimen=\dimen188
+\scratchbox=\box45
+\nofMPsegments=\count134
+\nofMParguments=\count135
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count136
+\MPscratchDim=\dimen189
+\MPnumerator=\count137
+\makeMPintoPDFobject=\count138
+\everyMPtoPDFconversion=\toks41
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -317,69 +659,70 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Info: Redefining \. on input line 76.
-LaTeX Info: Redefining \% on input line 76.
+LaTeX Info: Redefining \. on input line 88.
+LaTeX Info: Redefining \% on input line 88.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 76.
+(lastpage)             ! on input line 88.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 116.
+
+ABD: EveryShipout initializing macros
+LaTeX Font Info:    Try loading font information for U+msa on input line 128.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 116.
+LaTeX Font Info:    Try loading font information for U+msb on input line 128.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<./logos/logo_utn.png, id=1, 184.2885pt x 274.3851pt>
+<./logos/logo_utn.png, id=4, 184.2885pt x 274.3851pt>
 File: ./logos/logo_utn.png Graphic file (type png)
 <use ./logos/logo_utn.png>
-Package pdftex.def Info: ./logos/logo_utn.png  used on input line 141.
+Package pdftex.def Info: ./logos/logo_utn.png  used on input line 153.
 (pdftex.def)             Requested size: 142.26378pt x 211.82144pt.
- [1
+ [1{C:/Users/Miguel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-{C:/Users/Miguel/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./logos/lo
-go_utn.png>]
+ <./logos/logo_utn.png>]
 (TPSuperior.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
-\tf@toc=\write3
-\openout3 = `TPSuperior.toc'.
+\tf@toc=\write4
+\openout4 = `TPSuperior.toc'.
 
  [2]
-<./logos/UTN-FRSF.jpg, id=21, 536.0025pt x 85.31876pt>
+<./logos/UTN-FRSF.jpg, id=25, 536.0025pt x 85.31876pt>
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 214.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 226.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [1 <./logos/UTN-FRSF.jpg>]
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 280.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 292.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [2]
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 365.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 377.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [3]
-Overfull \hbox (12.14911pt too wide) detected at line 408
+Overfull \hbox (12.14911pt too wide) detected at line 420
 [][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 af[] \OT1/cmr/m/n/10.95 + \OML/cmm/
 m/it/10.95 bg[]\OT1/cmr/m/n/10.95 ) = [] []
  []
 
 
-Overfull \hbox (17.93716pt too wide) detected at line 416
+Overfull \hbox (17.93716pt too wide) detected at line 428
 [][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 af[] \OT1/cmr/m/n/10.95 + \OML/cmm/
 m/it/10.95 bg[]\OT1/cmr/m/n/10.95 ) = [] []
  []
 
 
-Overfull \hbox (29.6207pt too wide) detected at line 430
+Overfull \hbox (29.6207pt too wide) detected at line 442
 [][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 af[] \OT1/cmr/m/n/10.95 + \OML/cmm/
 m/it/10.95 bg[]\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 a[] [] \OT1/cmr/m/n/1
 0.95 + \OML/cmm/m/it/10.95 b[] []
@@ -387,213 +730,213 @@ m/it/10.95 bg[]\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 a[] [] \OT1/cmr/m/n/1
 
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 458.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 470.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [4]
-Overfull \hbox (23.73146pt too wide) in paragraph at lines 483--484
+Overfull \hbox (23.73146pt too wide) in paragraph at lines 495--496
 []\OT1/cmr/m/n/12 Esta pro-pie-dad solo de man-tie-ne pa-ra fun-cio-nes $\OML/
 cmm/m/it/12 f$ \OT1/cmr/m/n/12 y $\OML/cmm/m/it/12 g$ \OT1/cmr/m/n/12 tal que [
 ] y [].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--506
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
 
  []
 
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 558.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 570.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [5]
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 611.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 623.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [6]
-Underfull \hbox (badness 10000) in paragraph at lines 634--635
+Underfull \hbox (badness 10000) in paragraph at lines 646--647
 
  []
 
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 646.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 658.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 718--719
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 714--716
+Underfull \hbox (badness 10000) in paragraph at lines 726--728
 
  []
 
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 727.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 739.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 735--737
+Underfull \hbox (badness 10000) in paragraph at lines 747--749
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 771--773
+Underfull \hbox (badness 10000) in paragraph at lines 783--785
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 793--795
+Underfull \hbox (badness 10000) in paragraph at lines 805--807
 
  []
 
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 808.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 820.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [9]
-Overfull \hbox (3.06296pt too wide) detected at line 837
+Overfull \hbox (3.06296pt too wide) detected at line 849
 \OML/cmm/m/it/6 y \OT1/cmr/m/n/6 = [] \OML/cmm/m/it/6 u\OT1/cmr/m/n/6 (\OML/cmm
 /m/it/6 t \OT1/cmr/m/n/6 + 3) + [] \OML/cmm/m/it/6 u\OT1/cmr/m/n/6 (\OMS/cmsy/m
 /n/6  \OML/cmm/m/it/6 t \OT1/cmr/m/n/6 + 3)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 837--839
+Underfull \hbox (badness 10000) in paragraph at lines 849--851
 
  []
 
 
-Overfull \hbox (13.89642pt too wide) detected at line 858
+Overfull \hbox (13.89642pt too wide) detected at line 870
 \OML/cmm/m/it/6 y \OT1/cmr/m/n/6 = [] \OML/cmm/m/it/6 u\OT1/cmr/m/n/6 (\OML/cmm
 /m/it/6 t \OT1/cmr/m/n/6 + 3) + [] \OML/cmm/m/it/6 u\OT1/cmr/m/n/6 (\OMS/cmsy/m
 /n/6  \OML/cmm/m/it/6 t \OT1/cmr/m/n/6 + 3)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 858--860
+Underfull \hbox (badness 10000) in paragraph at lines 870--872
 
  []
 
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 878.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 890.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [10]
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 981.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 993.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [11]
-<./Imagenes/amortiguador_entrada.PNG, id=76, 586.19pt x 274.02374pt>
+<./Imagenes/amortiguador_entrada.PNG, id=80, 586.19pt x 274.02374pt>
 File: ./Imagenes/amortiguador_entrada.PNG Graphic file (type png)
 <use ./Imagenes/amortiguador_entrada.PNG>
 Package pdftex.def Info: ./Imagenes/amortiguador_entrada.PNG  used on input lin
-e 1013.
+e 1025.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1018--1019
+Underfull \hbox (badness 10000) in paragraph at lines 1030--1031
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1020--1021
+Underfull \hbox (badness 10000) in paragraph at lines 1032--1033
 
  []
 
-<./Imagenes/amortiguador_0.PNG, id=77, 586.19pt x 274.02374pt>
+<./Imagenes/amortiguador_0.PNG, id=81, 586.19pt x 274.02374pt>
 File: ./Imagenes/amortiguador_0.PNG Graphic file (type png)
 <use ./Imagenes/amortiguador_0.PNG>
-Package pdftex.def Info: ./Imagenes/amortiguador_0.PNG  used on input line 1024
+Package pdftex.def Info: ./Imagenes/amortiguador_0.PNG  used on input line 1036
 .
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
-<./Imagenes/amortiguador_001.PNG, id=78, 586.19pt x 274.02374pt>
+<./Imagenes/amortiguador_001.PNG, id=82, 586.19pt x 274.02374pt>
 File: ./Imagenes/amortiguador_001.PNG Graphic file (type png)
 <use ./Imagenes/amortiguador_001.PNG>
 Package pdftex.def Info: ./Imagenes/amortiguador_001.PNG  used on input line 10
-31.
+43.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
-<./Imagenes/amortiguador_01.PNG, id=79, 586.19pt x 274.02374pt>
+<./Imagenes/amortiguador_01.PNG, id=83, 586.19pt x 274.02374pt>
 File: ./Imagenes/amortiguador_01.PNG Graphic file (type png)
 <use ./Imagenes/amortiguador_01.PNG>
-Package pdftex.def Info: ./Imagenes/amortiguador_01.PNG  used on input line 103
-8.
+Package pdftex.def Info: ./Imagenes/amortiguador_01.PNG  used on input line 105
+0.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
-<./Imagenes/amortiguador_1.PNG, id=80, 586.19pt x 285.065pt>
+<./Imagenes/amortiguador_1.PNG, id=84, 586.19pt x 285.065pt>
 File: ./Imagenes/amortiguador_1.PNG Graphic file (type png)
 <use ./Imagenes/amortiguador_1.PNG>
-Package pdftex.def Info: ./Imagenes/amortiguador_1.PNG  used on input line 1045
+Package pdftex.def Info: ./Imagenes/amortiguador_1.PNG  used on input line 1057
 .
 (pdftex.def)             Requested size: 375.57779pt x 182.64105pt.
-<./Imagenes/amortiguador_10.PNG, id=81, 586.19pt x 274.02374pt>
+<./Imagenes/amortiguador_10.PNG, id=85, 586.19pt x 274.02374pt>
 File: ./Imagenes/amortiguador_10.PNG Graphic file (type png)
 <use ./Imagenes/amortiguador_10.PNG>
-Package pdftex.def Info: ./Imagenes/amortiguador_10.PNG  used on input line 105
-2.
+Package pdftex.def Info: ./Imagenes/amortiguador_10.PNG  used on input line 106
+4.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1057--1058
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1070
 
  []
 
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1058.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1070.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [12 <./Imagenes/amortiguador_entrada.PNG>]
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1058.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1070.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [13 <./Imagenes/amortiguador_0.PNG> <./Imagenes/amortiguador_001.PNG> <./Image
 nes/amortiguador_01.PNG>]
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1058.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1070.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [14 <./Imagenes/amortiguador_1.PNG> <./Imagenes/amortiguador_10.PNG>]
-<./Imagenes/adoquines_entrada.PNG, id=98, 586.19pt x 274.02374pt>
+<./Imagenes/adoquines_entrada.PNG, id=102, 586.19pt x 274.02374pt>
 File: ./Imagenes/adoquines_entrada.PNG Graphic file (type png)
 <use ./Imagenes/adoquines_entrada.PNG>
 Package pdftex.def Info: ./Imagenes/adoquines_entrada.PNG  used on input line 1
-068.
+080.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
-<./Imagenes/adoquines_1.PNG, id=99, 586.19pt x 274.02374pt>
+<./Imagenes/adoquines_1.PNG, id=103, 586.19pt x 274.02374pt>
 File: ./Imagenes/adoquines_1.PNG Graphic file (type png)
 <use ./Imagenes/adoquines_1.PNG>
-Package pdftex.def Info: ./Imagenes/adoquines_1.PNG  used on input line 1077.
+Package pdftex.def Info: ./Imagenes/adoquines_1.PNG  used on input line 1089.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
-<./Imagenes/adoquines_10.PNG, id=100, 586.19pt x 274.02374pt>
+<./Imagenes/adoquines_10.PNG, id=104, 586.19pt x 274.02374pt>
 File: ./Imagenes/adoquines_10.PNG Graphic file (type png)
 <use ./Imagenes/adoquines_10.PNG>
-Package pdftex.def Info: ./Imagenes/adoquines_10.PNG  used on input line 1084.
+Package pdftex.def Info: ./Imagenes/adoquines_10.PNG  used on input line 1096.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
 
 
 AED: lastpage setting LastPage
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1091.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1103.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [15 <./Imagenes/adoquines_entrada.PNG>]
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1091.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1103.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [16 <./Imagenes/adoquines_1.PNG> <./Imagenes/adoquines_10.PNG>] (TPSuperior.au
 x
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
 ) ) 
 Here is how much of TeX's memory you used:
- 5293 strings out of 492895
- 77341 string characters out of 3133476
- 166071 words of memory out of 3000000
- 9087 multiletter control sequences out of 15000+200000
- 22297 words of font info for 82 fonts, out of 3000000 for 9000
+ 15884 strings out of 492895
+ 303689 string characters out of 3133476
+ 368460 words of memory out of 3000000
+ 19438 multiletter control sequences out of 15000+200000
+ 22465 words of font info for 83 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,15n,43p,1037b,425s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,16n,77p,1037b,827s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKT
@@ -620,10 +963,11 @@ pe1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on TPSuperior.pdf (18 pages, 431865 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on TPSuperior.pdf (18 pages, 443410 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
+ 209 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 68 words of extra memory for PDF output out of 10000 (max. 10000000)
 
