@@ -21,6 +21,8 @@ Clara Mazzi, Miguel Storani}
 %\usepackage{pst-tree}			% 
 \usepackage{amsmath}
 \usepackage{amssymb}
+
+\graphicspath{ {./Imagenes/} }
 %---------------------------------------------------------
 
 %------------------------Márgenes-------------------------
@@ -236,7 +238,7 @@ Luego de haber calculado ambas componentes, reemplazamos \ref{primer_componente_
 \label{transformada_con_laplace}
 \end{equation}
 
-\section{Condiciones necesarias y suficientes para garantizar la existencia de la tranformada}
+\section{Condiciones necesarias y suficientes para garantizar la existencia de la transformada}
 
 Para asegurar la existencia de la transformada se debe cumplir que exista la transformada de Laplace para la función estudiada. Existe la transformada $\overline{T}_{ms}(f_{(t)})$ siempre que $f_{(t)}$ sea una función que cumple que:
 
@@ -585,6 +587,7 @@ $$\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) =s^n\  \overline{T}_{ms
 $$
 
 \section{Tabla de transformada de funciones elementales}
+
 
 \section{Solución de ecuaciones diferenciales}
 \begin{enumerate}[label=(\alph*)]
@@ -958,5 +961,65 @@ y = y_{\textrm{cn}}
 $$
 
 A partir de esta ecuación se pueden calcular las soluciones a los sistemas considerando las condiciones iniciales.
+
+
+\section{Sistema amortiguador}
+
+Para simular el sistema del amortiguador se utiliza el software \texttt{Scilab}, el cual permite simular todo tipo de sistemas LTI.
+Se tomaron simulaciones dejando fijos los valores de masa y constante elástica del resorte (ambas en 1), y se varió en diferentes proporciones el valor corrspondiente a la constante del amortiguador.
+
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.8\textwidth]{amortiguador_entrada.PNG}
+\caption{Señal ingresada al sistema que emla ser un lomo de burro}
+\label{entrada}
+\end{figure}
+
+Para emular la perturbación producida por un lomo de burro, se ingresa al sistema una combinación de funciones escalón que dan como resultado la señal representada en la \mbox{figura \ref{entrada}}.\\
+
+Las figuras \ref{KAC0}, \ref{KAC001}, \ref{KAC01}, \ref{KAC1}, \ref{KAC10} representan la altura del vehículo en relación al tiempo una vez pasado el lomo de burro, con constantes del cilindro que varían desde $0.01$ hasta $10$.
+
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.8\textwidth]{amortiguador_0.PNG}
+\caption{Función resultante con $K_{ac}=0$}
+\label{KAC0}
+\end{figure}
+
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.8\textwidth]{amortiguador_001.PNG}
+\caption{Función resultante con $K_{ac}=0.01$}
+\label{KAC001}
+\end{figure}
+
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.8\textwidth]{amortiguador_01.PNG}
+\caption{Función resultante con $K_{ac}=0.1$}
+\label{KAC01}
+\end{figure}
+
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.8\textwidth]{amortiguador_1.PNG}
+\caption{Función resultante con $K_{ac}=1$}
+\label{KAC1}
+\end{figure}
+
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.8\textwidth]{amortiguador_10.PNG}
+\caption{Función resultante con $K_{ac}=10$}
+\label{KAC10}
+\end{figure}
+
+En las diferentes gráficas se puede observar las diferencias entre los distintos valores de constante del cilindro hidráulico, siendo en el caso en que $K_{ac} = 0$ un sistema donde no se pierde energía por lo que la oscilación del vehículo nunca cesa. Caso contrario sucede cuando la constante del cilindro adopta valores mas significativos, haciendo que la energía sea dicipada mas rápidamente lo que produce en consecuencia una rápida amortiguación de la perturbación. Ninguno de los extremos es deseable, ya que si no se amortigua, la altura del vehículo oscilaría produciendo momentos en que la adhesión al suelo es nula, lo cual es una situación indeseable en todos casos y sobretodo en vehículos de competición. En el extremo en que el aceite dentro del amortiguador es infítamente viscoso, el amortiguador perdería toda capacidad de atenuar suavemente las perturbaciones, produciendo fuertes golpes que pueden causar daños físicos a la estructura del vehículo.\\
+
+Si bien para elegir un óptimo se trata de elegir un valor intermedio, considero que no hay un valor óptimo absoluto para la constante del cilindro, sino que la constante dependerá de qué se quiere lograr. Si se desea una amortiguación suave se debe reducir la constante del cilindro, si se desea un rápido agarre al suelo se subirá el valor de dicha constante a costa de golpes más bruscos a la estructura del vehículo.
+
+
+
+
 
 \end{document} 

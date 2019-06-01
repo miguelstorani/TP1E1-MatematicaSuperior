@@ -1,6 +1,6 @@
 \babel@toc {spanish}{}
 \contentsline {section}{\numberline {1}Expresar la nueva transformada en funci\IeC {\'o}n de transformadas conocidas}{1}% 
-\contentsline {section}{\numberline {2}Condiciones necesarias y suficientes para garantizar la existencia de la tranformada}{2}% 
+\contentsline {section}{\numberline {2}Condiciones necesarias y suficientes para garantizar la existencia de la transformada}{2}% 
 \contentsline {section}{\numberline {3}Antitransformada}{2}% 
 \contentsline {section}{\numberline {4}Propiedades de la nueva transformada}{4}% 
 \contentsline {subsection}{\numberline {4.1}Linealidad}{4}% 
@@ -14,3 +14,4 @@
 \contentsline {subsubsection}{\numberline {6.1.2}Soluci\IeC {\'o}n a los sistemas para $\bm { f_{(x)}=\qopname \relax o{cos}(x)}$}{8}% 
 \contentsline {subsubsection}{\numberline {6.1.3}Soluci\IeC {\'o}n a los sistemas para $\bm { f_{(x)}=\mathop {\mathgroup \symoperators sen}\nolimits (x+3)}$}{9}% 
 \contentsline {subsection}{\numberline {6.2}Condiciones iniciales no nulas}{10}% 
+\contentsline {section}{\numberline {7}Sistema amortiguador}{12}% 
