@@ -19,7 +19,7 @@ Clara Mazzi, Miguel Storani}
 \usepackage{bm}					% Negrita en ecuaciones
 %\usepackage{pstricks}			% Arboles
 %\usepackage{pst-tree}			% 
-\usepackage{amsmath}
+\usepackage{amsmath,caption,booktabs}
 \usepackage{amssymb}
 
 \graphicspath{ {./Imagenes/} }
@@ -105,18 +105,23 @@ Clara Mazzi, Miguel Storani}
 %	AUTHOR SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}{0.8\textwidth}
+\begin{minipage}{0.4\textwidth}
 \begin{flushleft}\large
-\emph{Alumnos:} \\
-\hspace{0.5cm}  \textsc{Mazzi}, Maria Clara
-{\small \texttt{mazzimclara@gmail.com}}\\
-\hspace{0.5cm}  \textsc{Storani}, Miguel Ignacio
-{\small \texttt{miguelignaciostorani@gmail.com}}\\
-
+\emph{Docentes:} \\
+\ Pablo A. \textsc{Kler}\\% Supervisor's Name
+\ Luis \textsc{Bianculli}\\
 
 
 \end{flushleft}
-\end{minipage}\\[2.5cm]
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Alumno:}\\
+Miguel Ignacio \textsc{Storani}\\% Your name
+{\small \texttt{miguelignaciostorani@gmail.com}}
+\end{flushright}
+\end{minipage}\\[3cm]
 
 
 % If you don't want a supervisor, uncomment the two lines below and remove the section above
@@ -143,7 +148,9 @@ Clara Mazzi, Miguel Storani}
 %%---------------------------------------------------------
 
 \begin{abstract}
-kjdfhgjhsdfjkvbnsjkfdvbkjfdbv
+Se estudian sistemas LTI, desarrollando una nueva transformada cuyas propiedades nos permitirán resolver las ecuaciones diferenciales que modelan al sistema.
+
+Además se estudia de manera empírica mediante un software de simulación de sistemas (\texttt{SciLab}) el comportamiento de un amortiguador compuesto por un resorte y un cilíndro hidráulico.
 \end{abstract}
 
 %--------------------------Índice-------------------------
@@ -585,9 +592,24 @@ $$\overline{T}_{ms}\left(\frac{d^n f_{(t)}}{dt^n}\right) =s^n\  \overline{T}_{ms
  (f_{(t)} - f_{(-t)})^{(n-k-1)}_{(0^-)}
 \end{pmatrix}
 $$
+\newpage
+\section{Tabla de transformadas de funciones elementales}
+\begin{table}[h!]
+\centering
+$\begin{array}{ ccc }
+\toprule[0.05cm]
+\makebox[3 cm]{\text{función}} & \makebox[3 cm]{\text{ROC}} & \makebox[3 cm]{$T_{ms}$} \\
+\midrule[0.05cm]
+\delta(t) & \forall z & \begin{pmatrix}1\\0\end{pmatrix}\\[0.7 cm]
+u(t) & real(z) > 0 &  \begin{pmatrix}\frac{1}{2z}\\[0.2 cm]\frac{1}{2z}\end{pmatrix}\\[0.7cm]
+e^{at} &real(z) > a & \begin{pmatrix}\frac{a}{z^2-a^2}\\[0.2 cm]\frac{z}{z^2-a^2}\end{pmatrix}\\[0.7cm]
+\sen(at) & real(z) > 0 &  \begin{pmatrix}0\\[0.2 cm]\frac{a}{s^2+a^2}\end{pmatrix}\\[0.7cm]
+\cos(at) & real(z) > 0 &  \begin{pmatrix}\frac{s}{s^2+a^2}\\[0.2 cm]0\end{pmatrix}\\[0.7cm]
 
-\section{Tabla de transformada de funciones elementales}
-
+\bottomrule[0.05cm]
+\end{array}$
+\caption{transformadas de funciones elementales.}
+\end{table}
 
 \section{Solución de ecuaciones diferenciales}
 \begin{enumerate}[label=(\alph*)]

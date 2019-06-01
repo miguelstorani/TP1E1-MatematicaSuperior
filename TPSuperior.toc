@@ -7,13 +7,13 @@
 \contentsline {subsection}{\numberline {4.2}Desplazamineto temporal}{5}% 
 \contentsline {subsection}{\numberline {4.3}Convoluci\IeC {\'o}n}{5}% 
 \contentsline {subsection}{\numberline {4.4}Derivada temporal}{6}% 
-\contentsline {section}{\numberline {5}Tabla de transformada de funciones elementales}{6}% 
-\contentsline {section}{\numberline {6}Soluci\IeC {\'o}n de ecuaciones diferenciales}{6}% 
+\contentsline {section}{\numberline {5}Tabla de transformadas de funciones elementales}{7}% 
+\contentsline {section}{\numberline {6}Soluci\IeC {\'o}n de ecuaciones diferenciales}{7}% 
 \contentsline {subsection}{\numberline {6.1}Condiciones iniciales nulas}{7}% 
 \contentsline {subsubsection}{\numberline {6.1.1}Soluci\IeC {\'o}n a los sistemas para $\bm { f_{(x)}=\mathop {\mathgroup \symoperators sen}\nolimits (x)}$}{8}% 
-\contentsline {subsubsection}{\numberline {6.1.2}Soluci\IeC {\'o}n a los sistemas para $\bm { f_{(x)}=\qopname \relax o{cos}(x)}$}{8}% 
-\contentsline {subsubsection}{\numberline {6.1.3}Soluci\IeC {\'o}n a los sistemas para $\bm { f_{(x)}=\mathop {\mathgroup \symoperators sen}\nolimits (x+3)}$}{9}% 
-\contentsline {subsection}{\numberline {6.2}Condiciones iniciales no nulas}{10}% 
+\contentsline {subsubsection}{\numberline {6.1.2}Soluci\IeC {\'o}n a los sistemas para $\bm { f_{(x)}=\qopname \relax o{cos}(x)}$}{9}% 
+\contentsline {subsubsection}{\numberline {6.1.3}Soluci\IeC {\'o}n a los sistemas para $\bm { f_{(x)}=\mathop {\mathgroup \symoperators sen}\nolimits (x+3)}$}{10}% 
+\contentsline {subsection}{\numberline {6.2}Condiciones iniciales no nulas}{11}% 
 \contentsline {section}{\numberline {7}Sistema amortiguador}{12}% 
 \contentsline {subsection}{\numberline {7.1}Lomo de burro}{12}% 
 \contentsline {subsection}{\numberline {7.2}Calle de adoquines}{15}% 

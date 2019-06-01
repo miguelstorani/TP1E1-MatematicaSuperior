@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.29)  31 MAY 2019 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.29)  31 MAY 2019 23:13
 entering extended mode
 **./TPSuperior.tex
 (TPSuperior.tex
@@ -172,6 +172,43 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption.sty
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/caption\caption3.sty
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen118
+\captionmargin@=\dimen119
+\captionwidth=\dimen120
+\caption@tempdima=\dimen121
+\caption@indent=\dimen122
+\caption@parindent=\dimen123
+\caption@hangindent=\dimen124
+)
+\c@caption@flags=\count105
+\c@ContinuedFloat=\count106
+)
+(C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen125
+\lightrulewidth=\dimen126
+\cmidrulewidth=\dimen127
+\belowrulesep=\dimen128
+\belowbottomsep=\dimen129
+\aboverulesep=\dimen130
+\abovetopsep=\dimen131
+\cmidrulesep=\dimen132
+\cmidrulekern=\dimen133
+\defaultaddspace=\dimen134
+\@cmidla=\count107
+\@cmidlb=\count108
+\@aboverulesep=\dimen135
+\@belowrulesep=\dimen136
+\@thisruleclass=\count109
+\@lastruleclass=\count110
+\@thisrulewidth=\dimen137
+)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
@@ -186,8 +223,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
-\PaperWidth=\dimen118
-\PaperHeight=\dimen119
+\PaperWidth=\dimen138
+\PaperHeight=\dimen139
 ) (C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
@@ -222,16 +259,16 @@ LaTeX Font Info:    ... okay on input line 76.
 
 (C:\Users\Miguel\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
-\scratchdimen=\dimen120
+\scratchcounter=\count111
+\scratchdimen=\dimen140
 \scratchbox=\box32
-\nofMPsegments=\count106
-\nofMParguments=\count107
+\nofMPsegments=\count112
+\nofMParguments=\count113
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count108
-\MPscratchDim=\dimen121
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen141
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
 \everyMPtoPDFconversion=\toks26
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -285,12 +322,14 @@ LaTeX Info: Redefining \% on input line 76.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 76.
-LaTeX Font Info:    Try loading font information for U+msa on input line 119.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 116.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 119.
+LaTeX Font Info:    Try loading font information for U+msb on input line 116.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -298,7 +337,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <./logos/logo_utn.png, id=1, 184.2885pt x 274.3851pt>
 File: ./logos/logo_utn.png Graphic file (type png)
 <use ./logos/logo_utn.png>
-Package pdftex.def Info: ./logos/logo_utn.png  used on input line 136.
+Package pdftex.def Info: ./logos/logo_utn.png  used on input line 141.
 (pdftex.def)             Requested size: 142.26378pt x 211.82144pt.
  [1
 
@@ -315,32 +354,32 @@ LaTeX Info: Redefining \% on input line 1.
 <./logos/UTN-FRSF.jpg, id=21, 536.0025pt x 85.31876pt>
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 207.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 214.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [1 <./logos/UTN-FRSF.jpg>]
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 273.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 280.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [2]
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 358.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 365.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [3]
-Overfull \hbox (12.14911pt too wide) detected at line 401
+Overfull \hbox (12.14911pt too wide) detected at line 408
 [][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 af[] \OT1/cmr/m/n/10.95 + \OML/cmm/
 m/it/10.95 bg[]\OT1/cmr/m/n/10.95 ) = [] []
  []
 
 
-Overfull \hbox (17.93716pt too wide) detected at line 409
+Overfull \hbox (17.93716pt too wide) detected at line 416
 [][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 af[] \OT1/cmr/m/n/10.95 + \OML/cmm/
 m/it/10.95 bg[]\OT1/cmr/m/n/10.95 ) = [] []
  []
 
 
-Overfull \hbox (29.6207pt too wide) detected at line 423
+Overfull \hbox (29.6207pt too wide) detected at line 430
 [][]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 af[] \OT1/cmr/m/n/10.95 + \OML/cmm/
 m/it/10.95 bg[]\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 a[] [] \OT1/cmr/m/n/1
 0.95 + \OML/cmm/m/it/10.95 b[] []
@@ -348,10 +387,10 @@ m/it/10.95 bg[]\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 a[] [] \OT1/cmr/m/n/1
 
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 451.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 458.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [4]
-Overfull \hbox (23.73146pt too wide) in paragraph at lines 476--477
+Overfull \hbox (23.73146pt too wide) in paragraph at lines 483--484
 []\OT1/cmr/m/n/12 Esta pro-pie-dad solo de man-tie-ne pa-ra fun-cio-nes $\OML/
 cmm/m/it/12 f$ \OT1/cmr/m/n/12 y $\OML/cmm/m/it/12 g$ \OT1/cmr/m/n/12 tal que [
 ] y [].
@@ -359,43 +398,38 @@ cmm/m/it/12 f$ \OT1/cmr/m/n/12 y $\OML/cmm/m/it/12 g$ \OT1/cmr/m/n/12 tal que [
 
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 535.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 542.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 596--597
-
- []
-
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 597.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 595.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
-[6]
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 618--619
+
+ []
+
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 668.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 630.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
- [7]
-Underfull \hbox (badness 10000) in paragraph at lines 668--669
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 690--691
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 676--678
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 697--699
+Underfull \hbox (badness 10000) in paragraph at lines 698--700
 
  []
 
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 730.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 711.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 733--735
+Underfull \hbox (badness 10000) in paragraph at lines 719--721
 
  []
 
@@ -404,184 +438,185 @@ Underfull \hbox (badness 10000) in paragraph at lines 755--757
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 777--779
+
+ []
+
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 799.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 792.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [9]
-Overfull \hbox (3.06296pt too wide) detected at line 799
+Overfull \hbox (3.06296pt too wide) detected at line 821
 \OML/cmm/m/it/6 y \OT1/cmr/m/n/6 = [] \OML/cmm/m/it/6 u\OT1/cmr/m/n/6 (\OML/cmm
 /m/it/6 t \OT1/cmr/m/n/6 + 3) + [] \OML/cmm/m/it/6 u\OT1/cmr/m/n/6 (\OMS/cmsy/m
 /n/6  \OML/cmm/m/it/6 t \OT1/cmr/m/n/6 + 3)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 799--801
+Underfull \hbox (badness 10000) in paragraph at lines 821--823
 
  []
 
 
-Overfull \hbox (13.89642pt too wide) detected at line 820
+Overfull \hbox (13.89642pt too wide) detected at line 842
 \OML/cmm/m/it/6 y \OT1/cmr/m/n/6 = [] \OML/cmm/m/it/6 u\OT1/cmr/m/n/6 (\OML/cmm
 /m/it/6 t \OT1/cmr/m/n/6 + 3) + [] \OML/cmm/m/it/6 u\OT1/cmr/m/n/6 (\OMS/cmsy/m
 /n/6  \OML/cmm/m/it/6 t \OT1/cmr/m/n/6 + 3)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 820--822
+Underfull \hbox (badness 10000) in paragraph at lines 842--844
 
  []
 
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 875.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 862.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [10]
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 972.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 965.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [11]
 <./Imagenes/amortiguador_entrada.PNG, id=76, 586.19pt x 274.02374pt>
 File: ./Imagenes/amortiguador_entrada.PNG Graphic file (type png)
 <use ./Imagenes/amortiguador_entrada.PNG>
 Package pdftex.def Info: ./Imagenes/amortiguador_entrada.PNG  used on input lin
-e 975.
+e 997.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 980--981
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1003
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 982--983
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1005
 
  []
 
 <./Imagenes/amortiguador_0.PNG, id=77, 586.19pt x 274.02374pt>
 File: ./Imagenes/amortiguador_0.PNG Graphic file (type png)
 <use ./Imagenes/amortiguador_0.PNG>
-Package pdftex.def Info: ./Imagenes/amortiguador_0.PNG  used on input line 986.
-
+Package pdftex.def Info: ./Imagenes/amortiguador_0.PNG  used on input line 1008
+.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
 <./Imagenes/amortiguador_001.PNG, id=78, 586.19pt x 274.02374pt>
 File: ./Imagenes/amortiguador_001.PNG Graphic file (type png)
 <use ./Imagenes/amortiguador_001.PNG>
-Package pdftex.def Info: ./Imagenes/amortiguador_001.PNG  used on input line 99
-3.
+Package pdftex.def Info: ./Imagenes/amortiguador_001.PNG  used on input line 10
+15.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
 <./Imagenes/amortiguador_01.PNG, id=79, 586.19pt x 274.02374pt>
 File: ./Imagenes/amortiguador_01.PNG Graphic file (type png)
 <use ./Imagenes/amortiguador_01.PNG>
-Package pdftex.def Info: ./Imagenes/amortiguador_01.PNG  used on input line 100
-0.
+Package pdftex.def Info: ./Imagenes/amortiguador_01.PNG  used on input line 102
+2.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
 <./Imagenes/amortiguador_1.PNG, id=80, 586.19pt x 285.065pt>
 File: ./Imagenes/amortiguador_1.PNG Graphic file (type png)
 <use ./Imagenes/amortiguador_1.PNG>
-Package pdftex.def Info: ./Imagenes/amortiguador_1.PNG  used on input line 1007
+Package pdftex.def Info: ./Imagenes/amortiguador_1.PNG  used on input line 1029
 .
 (pdftex.def)             Requested size: 375.57779pt x 182.64105pt.
 <./Imagenes/amortiguador_10.PNG, id=81, 586.19pt x 274.02374pt>
 File: ./Imagenes/amortiguador_10.PNG Graphic file (type png)
 <use ./Imagenes/amortiguador_10.PNG>
-Package pdftex.def Info: ./Imagenes/amortiguador_10.PNG  used on input line 101
-4.
+Package pdftex.def Info: ./Imagenes/amortiguador_10.PNG  used on input line 103
+6.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1019--1020
+Underfull \hbox (badness 10000) in paragraph at lines 1041--1042
 
  []
 
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1027.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1042.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [12 <./Imagenes/amortiguador_entrada.PNG>]
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1027.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1042.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [13 <./Imagenes/amortiguador_0.PNG> <./Imagenes/amortiguador_001.PNG> <./Image
 nes/amortiguador_01.PNG>]
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1027.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1042.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [14 <./Imagenes/amortiguador_1.PNG> <./Imagenes/amortiguador_10.PNG>]
 <./Imagenes/adoquines_entrada.PNG, id=98, 586.19pt x 274.02374pt>
 File: ./Imagenes/adoquines_entrada.PNG Graphic file (type png)
 <use ./Imagenes/adoquines_entrada.PNG>
 Package pdftex.def Info: ./Imagenes/adoquines_entrada.PNG  used on input line 1
-030.
+052.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
 <./Imagenes/adoquines_1.PNG, id=99, 586.19pt x 274.02374pt>
 File: ./Imagenes/adoquines_1.PNG Graphic file (type png)
 <use ./Imagenes/adoquines_1.PNG>
-Package pdftex.def Info: ./Imagenes/adoquines_1.PNG  used on input line 1039.
+Package pdftex.def Info: ./Imagenes/adoquines_1.PNG  used on input line 1061.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
 <./Imagenes/adoquines_10.PNG, id=100, 586.19pt x 274.02374pt>
 File: ./Imagenes/adoquines_10.PNG Graphic file (type png)
 <use ./Imagenes/adoquines_10.PNG>
-Package pdftex.def Info: ./Imagenes/adoquines_10.PNG  used on input line 1046.
+Package pdftex.def Info: ./Imagenes/adoquines_10.PNG  used on input line 1068.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
 
 
 AED: lastpage setting LastPage
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1053.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1075.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
 [15 <./Imagenes/adoquines_entrada.PNG>]
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1053.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1075.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
  [16 <./Imagenes/adoquines_1.PNG> <./Imagenes/adoquines_10.PNG>] (TPSuperior.au
 x
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) ) 
 Here is how much of TeX's memory you used:
- 4131 strings out of 492895
- 56525 string characters out of 3133476
- 144648 words of memory out of 3000000
- 7935 multiletter control sequences out of 15000+200000
+ 5293 strings out of 492895
+ 77341 string characters out of 3133476
+ 166071 words of memory out of 3000000
+ 9087 multiletter control sequences out of 15000+200000
  22297 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,15n,43p,1037b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cmextra/cmex7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on TPSuperior.pdf (18 pages, 425356 bytes).
+ 41i,15n,43p,1037b,427s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cmextra/cmex7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
+t10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on TPSuperior.pdf (18 pages, 431919 bytes).
 PDF statistics:
  202 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
