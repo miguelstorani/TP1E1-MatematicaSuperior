@@ -482,52 +482,68 @@ $$
 
 Esta propiedad sólo de mantiene para funciones $f$ y $g$ tal que  \makebox{$f(t) = 0 \ \forall t < 0$} y  \makebox{$g(t) = 0 \ \forall t < 0$}. Debido a estas restricciones podemos expresar nuestra tranformada en función de la tranformada unilteral de Laplace.
 
+\begin{equation}\overline{T}_{ms}(f_{(t)} * g_{(t)}) = 
+ \overline{T}_{ms}(f_{(t)})\mathcal{L}_u\left\{g_{(t)} \right\} = 
+ \overline{T}_{ms}(g_{(t)}) \mathcal{L}_u\left\{f_{(t)} \right\} 
+\end{equation}
+
 $$
-\overline{T}_{ms}(f_{(t)} * g_{(t)}) = \frac12
+\overline{T}_{ms}(f_{(t)} * g_{(t)})=\frac12 \begin{pmatrix}
+1\\1
+\end{pmatrix}\mathcal{L}_u\left\{f_{(t)} \right\}\mathcal{L}_u\left\{g_{(t)} \right\}
+$$
+
+
+{\bfseries Demostración}
+$$
+\overline{T}_{ms}(f_{(t)} * g_{(t)}) = 
+\frac12
 \begin{pmatrix}
-\mathcal{L}_u\left\{(f_{(t)} * g_{(t)}) + (f_{(-t)} * g_{(-t)})\right\}\\[0.2 cm]
-\mathcal{L}_u\left\{(f_{(t)} * g_{(t)}) - (f_{(-t)} * g_{(-t)})\right\}
+\mathcal{L}\left\{\left[f(t)*g(t)\right]u(t)\right\}_{(z)} +  \mathcal{L}\left\{\left[f(t)*g(t)\right]u(-t)\right\}_{(-z)}\\[0.2 cm]
+\mathcal{L}\left\{\left[f(t)*g(t)\right]u(t)\right\}_{(z)} -  \mathcal{L}\left\{\left[f(t)*g(t)\right]u(-t)\right\}_{(-z)} 
+\end{pmatrix}
+$$\\
+
+Por hipótesis se sabe que$f(t)*g(t) = 0 \ \ \forall t < 0 $, por lo tanto:
+$$
+\overline{T}_{ms}(f_{(t)} * g_{(t)}) = 
+\frac12
+\begin{pmatrix}
+\mathcal{L}\left\{\left[f(t)*g(t)\right]u(t)\right\}_{(z)} + 0\\[0.2 cm]
+\mathcal{L}\left\{\left[f(t)*g(t)\right]u(t)\right\}_{(z)} -  0 
 \end{pmatrix}
 $$
 
-Sea $f(t)$ par, dado que $f(t) = f(-t)$, se puede escribir la transformada de la siguiente manera:
 
 $$
 \overline{T}_{ms}(f_{(t)} * g_{(t)}) = \frac12
 \begin{pmatrix}
-\mathcal{L}_u\left\{(f_{(t)} * g_{(t)}) + (f_{(t)} * g_{(-t)})\right\}\\[0.2 cm]
-\mathcal{L}_u\left\{(f_{(t)} * g_{(t)}) - (f_{(t)} * g_{(-t)})\right\}
-\end{pmatrix}
-$$
-
-Por propiedad de la convolución se sabe que $f * (g +h) = (f*g) + (f*h)$, por lo que se puede reducir la expresión de la transformada aplicando esta propiedad.
-$$
-\overline{T}_{ms}(f_{(t)} * g_{(t)}) = \frac12
-\begin{pmatrix}
-\mathcal{L}_u\left\{(f_{(t)} * (g_{(t)}+ g_{(-t)})\right\}\\[0.2 cm]
-\mathcal{L}_u\left\{(f_{(t)} * ( g_{(t)} - g_{(-t)})\right\}
+\mathcal{L}_u\left\{f_{(t)}\right\}  \mathcal{L}_u\left\{g_{(t)} \right\}\\[0.2 cm]
+\mathcal{L}_u\left\{f_{(t)}\right\} \mathcal{L}_u\left\{g_{(t)}\right\}
 \end{pmatrix}
 $$
 
 $$
 \overline{T}_{ms}(f_{(t)} * g_{(t)}) = \frac12
 \begin{pmatrix}
-\mathcal{L}_u\left\{(f_{(t)} \right\} \mathcal{L}_u\left\{ g_{(t)}+ g_{(-t)}\right\}\\[0.2 cm]
-\mathcal{L}_u\left\{(f_{(t)} \right\} \mathcal{L}_u\left\{ g_{(t)} - g_{(-t)}\right\}
-\end{pmatrix}
-$$
-
-$$
-\overline{T}_{ms}(f_{(t)} * g_{(t)}) = \frac12
+\mathcal{L}_u\left\{f_{(t)}\right\} \\[0.2 cm]
+\mathcal{L}_u\left\{f_{(t)}\right\}
+\end{pmatrix} \mathcal{L}_u\left\{g_{(t)} \right\} = \frac12
 \begin{pmatrix}
- \mathcal{L}_u\left\{ g_{(t)}+ g_{(-t)}\right\}\\[0.2 cm]
-\mathcal{L}_u\left\{ g_{(t)} - g_{(-t)}\right\}
-\end{pmatrix} \mathcal{L}_u\left\{(f_{(t)} \right\}  =\overline{T}_{ms}( g_{(t)})  \mathcal{L}_u\left\{(f_{(t)} \right\}
+\mathcal{L}_u\left\{g_{(t)}\right\} \\[0.2 cm]
+\mathcal{L}_u\left\{g_{(t)}\right\}
+\end{pmatrix} \mathcal{L}_u\left\{f_{(t)} \right\}
 $$
 
 $$
-\therefore \overline{T}_{ms}(f_{(t)} * g_{(t)}) =\overline{T}_{ms}( g_{(t)})  \mathcal{L}_u\left\{(f_{(t)} \right\}
+\therefore \overline{T}_{ms}(f_{(t)} * g_{(t)}) = 
+ \overline{T}_{ms}(f_{(t)})\mathcal{L}_u\left\{g_{(t)} \right\} = 
+ \overline{T}_{ms}(g_{(t)}) \mathcal{L}_u\left\{f_{(t)} \right\} =\frac12 \begin{pmatrix}
+1\\1
+\end{pmatrix}\mathcal{L}_u\left\{f_{(t)} \right\}\mathcal{L}_u\left\{g_{(t)} \right\}
 $$
+
+
 
 
 \subsection{Derivada temporal}
