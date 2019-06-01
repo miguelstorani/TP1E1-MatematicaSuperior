@@ -965,6 +965,8 @@ A partir de esta ecuación se pueden calcular las soluciones a los sistemas cons
 
 \section{Sistema amortiguador}
 
+\subsection{Lomo de burro}
+
 Para simular el sistema del amortiguador se utiliza el software \texttt{Scilab}, el cual permite simular todo tipo de sistemas LTI.
 Se tomaron simulaciones dejando fijos los valores de masa y constante elástica del resorte (ambas en 1), y se varió en diferentes proporciones el valor corrspondiente a la constante del amortiguador.
 
@@ -977,48 +979,58 @@ Se tomaron simulaciones dejando fijos los valores de masa y constante elástica 
 
 Para emular la perturbación producida por un lomo de burro, se ingresa al sistema una combinación de funciones escalón que dan como resultado la señal representada en la \mbox{figura \ref{entrada}}.\\
 
-Las figuras \ref{KAC0}, \ref{KAC001}, \ref{KAC01}, \ref{KAC1}, \ref{KAC10} representan la altura del vehículo en relación al tiempo una vez pasado el lomo de burro, con constantes del cilindro que varían desde $0.01$ hasta $10$.
+Las figuras \ref{KAC0}, \ref{KAC001}, \ref{KAC01}, \ref{KAC1}, \ref{KAC10} (a partir de la página \pageref{KAC0}) representan la altura del vehículo en relación al tiempo una vez pasado el lomo de burro, con constantes del cilindro que varían desde $0$ hasta $10$.\\
 
-\begin{figure}[h!]
+\begin{figure}[p]
 \center
 \includegraphics[width=0.8\textwidth]{amortiguador_0.PNG}
 \caption{Función resultante con $K_{ac}=0$}
 \label{KAC0}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[p]
 \center
 \includegraphics[width=0.8\textwidth]{amortiguador_001.PNG}
 \caption{Función resultante con $K_{ac}=0.01$}
 \label{KAC001}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[p]
 \center
 \includegraphics[width=0.8\textwidth]{amortiguador_01.PNG}
 \caption{Función resultante con $K_{ac}=0.1$}
 \label{KAC01}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[p]
 \center
 \includegraphics[width=0.8\textwidth]{amortiguador_1.PNG}
 \caption{Función resultante con $K_{ac}=1$}
 \label{KAC1}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[p]
 \center
 \includegraphics[width=0.8\textwidth]{amortiguador_10.PNG}
 \caption{Función resultante con $K_{ac}=10$}
 \label{KAC10}
 \end{figure}
 
-En las diferentes gráficas se puede observar las diferencias entre los distintos valores de constante del cilindro hidráulico, siendo en el caso en que $K_{ac} = 0$ un sistema donde no se pierde energía por lo que la oscilación del vehículo nunca cesa. Caso contrario sucede cuando la constante del cilindro adopta valores mas significativos, haciendo que la energía sea dicipada mas rápidamente lo que produce en consecuencia una rápida amortiguación de la perturbación. Ninguno de los extremos es deseable, ya que si no se amortigua, la altura del vehículo oscilaría produciendo momentos en que la adhesión al suelo es nula, lo cual es una situación indeseable en todos casos y sobretodo en vehículos de competición. En el extremo en que el aceite dentro del amortiguador es infítamente viscoso, el amortiguador perdería toda capacidad de atenuar suavemente las perturbaciones, produciendo fuertes golpes que pueden causar daños físicos a la estructura del vehículo.\\
+En las diferentes gráficas se pueden observar las diferencias entre los distintos valores de constante del cilindro hidráulico, siendo en el caso en que $K_{ac} = 0$ un sistema donde no se pierde energía por lo que la oscilación del vehículo nunca cesa. Caso contrario sucede cuando la constante del cilindro adopta valores mas significativos, haciendo que la energía sea dicipada mas rápidamente lo que produce en consecuencia una rápida amortiguación de la perturbación. Ninguno de los extremos es deseable, ya que si no se amortigua, la altura del vehículo oscilaría indefinidamente produciendo momentos en que la adhesión al suelo es nula, lo cual es una situación indeseable en todos casos y sobretodo en vehículos de competición. En el extremo en que el aceite dentro del amortiguador es infítamente viscoso, el amortiguador perdería toda capacidad de atenuar suavemente las perturbaciones, produciendo fuertes golpes que pueden causar daños físicos a la estructura del vehículo.\\
 
 Si bien para elegir un óptimo se trata de elegir un valor intermedio, considero que no hay un valor óptimo absoluto para la constante del cilindro, sino que la constante dependerá de qué se quiere lograr. Si se desea una amortiguación suave se debe reducir la constante del cilindro, si se desea un rápido agarre al suelo se subirá el valor de dicha constante a costa de golpes más bruscos a la estructura del vehículo.
 
 
+\subsection{Calle de adoquines}
+
+Para simular una calle de adquines se sumaron 3 funciones senoidales de distintas amplitudes y frecuencias, valores que son sólo para hacer las pruebas y que carecen de un fundamento para su elección. 
+
+\begin{figure}[h!]
+\center
+\includegraphics[width=0.8\textwidth]{adoquines_entrada.PNG}
+\caption{Señal ingresada al sistema que emula una calle de adoquines}
+\label{adoquines_entrada}
+\end{figure}
 
 
 
