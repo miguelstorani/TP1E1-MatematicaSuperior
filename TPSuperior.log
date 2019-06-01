@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.29)  31 MAY 2019 21:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.29)  31 MAY 2019 22:26
 entering extended mode
 **./TPSuperior.tex
 (TPSuperior.tex
@@ -515,14 +515,30 @@ File: ./Imagenes/adoquines_entrada.PNG Graphic file (type png)
 Package pdftex.def Info: ./Imagenes/adoquines_entrada.PNG  used on input line 1
 030.
 (pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
+<./Imagenes/adoquines_1.PNG, id=99, 586.19pt x 274.02374pt>
+File: ./Imagenes/adoquines_1.PNG Graphic file (type png)
+<use ./Imagenes/adoquines_1.PNG>
+Package pdftex.def Info: ./Imagenes/adoquines_1.PNG  used on input line 1039.
+(pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
+<./Imagenes/adoquines_10.PNG, id=100, 586.19pt x 274.02374pt>
+File: ./Imagenes/adoquines_10.PNG Graphic file (type png)
+<use ./Imagenes/adoquines_10.PNG>
+Package pdftex.def Info: ./Imagenes/adoquines_10.PNG  used on input line 1046.
+(pdftex.def)             Requested size: 375.57779pt x 175.56693pt.
 
 
 AED: lastpage setting LastPage
 File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
 <use ./logos/UTN-FRSF.jpg>
-Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1037.
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1053.
 (pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
-[15 <./Imagenes/adoquines_entrada.PNG>] (TPSuperior.aux
+[15 <./Imagenes/adoquines_entrada.PNG>]
+File: ./logos/UTN-FRSF.jpg Graphic file (type jpg)
+<use ./logos/UTN-FRSF.jpg>
+Package pdftex.def Info: ./logos/UTN-FRSF.jpg  used on input line 1053.
+(pdftex.def)             Requested size: 89.36897pt x 14.22636pt.
+ [16 <./Imagenes/adoquines_1.PNG> <./Imagenes/adoquines_10.PNG>] (TPSuperior.au
+x
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
@@ -531,10 +547,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4119 strings out of 492895
- 56217 string characters out of 3133476
- 144621 words of memory out of 3000000
- 7925 multiletter control sequences out of 15000+200000
+ 4131 strings out of 492895
+ 56525 string characters out of 3133476
+ 144648 words of memory out of 3000000
+ 7935 multiletter control sequences out of 15000+200000
  22297 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,15n,43p,1037b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -565,9 +581,9 @@ e1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt
 10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on TPSuperior.pdf (17 pages, 415615 bytes).
+Output written on TPSuperior.pdf (18 pages, 425356 bytes).
 PDF statistics:
- 195 PDF objects out of 1000 (max. 8388607)
+ 202 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
