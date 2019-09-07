@@ -25,7 +25,7 @@ Clara Mazzi, Miguel Storani}
 \usepackage{background}
 
 
-\SetBgContents{\scriptsize \rotatebox[origin=c]{90}{\texttt{Miguel Storani, GitHub bit.ly/2Kiclyi}}}
+\SetBgContents{\scriptsize \rotatebox[origin=c]{90}{\texttt{miguelstorani @ GitHub bit.ly/2Kiclyi}}}
 \SetBgScale{1}
 \SetBgAngle{0}
 \SetBgOpacity{1}
@@ -65,7 +65,7 @@ Clara Mazzi, Miguel Storani}
 %---------------------Diseño Encabezado-------------------
 
 \fancyhead[L]{\includegraphics[height=.5cm]{./logos/UTN-FRSF.jpg}}
-\fancyhead[R]{\textsf{\Large{Ingeniería en Sistemas de Informacíon}}}
+\fancyhead[R]{\textsf{\Large{Ingeniería en Sistemas de Información}}}
 %---------------------------------------------------------
 
 %--------------------Diseño Pié de pagina-----------------
@@ -83,7 +83,8 @@ Clara Mazzi, Miguel Storani}
 \pagestyle{empty}							% Estilo de página (Habilita los encabezados y pié de página)
 
 
-
+\newcommand\DeactivateBG{\backgroundsetup{contents={}}}
+\newcommand\ActivateBG{\backgroundsetup{contents={Draft}}}
 
 \begin{document}
 
@@ -99,7 +100,7 @@ Clara Mazzi, Miguel Storani}
 %----------------------------------------------------------------------------------------
 %	HEADING SECTIONS
 %----------------------------------------------------------------------------------------
-
+\DeactivateBG
 \textsc{\LARGE Universidad Tecnológica Nacional}\\[0.5cm]				% Name of your university/college
 \textsc{\Large Facultad Regional Santa Fe}\\[1.5cm]						% Major heading such as course name
 \textsc{\large Ingeniería en Sistemas de Información}\\[0.5cm]			% Minor heading such as course title
@@ -110,7 +111,7 @@ Clara Mazzi, Miguel Storani}
 
 \HRule \\[0.9cm]
 { \huge \bfseries Matemática Superior}\\[0.4cm]
-{ \large \bfseries Trabajo Práctico 1}\\[0.7cm] % Title of your document
+{ \large \bfseries TP1A - Corrección}\\[0.7cm] % Title of your document
 \HRule \\[1.5cm]
 
 %----------------------------------------------------------------------------------------
@@ -151,7 +152,7 @@ Miguel Ignacio \textsc{Storani}\\% Your name
 %-----------------------------------------------------------------------
 
 \includegraphics[width=5cm]{./logos/logo_utn.png}\\[1cm] 				% Include a department/university logo - this will require the graphicx package
- {\large 26 de mayo de 2019}											% Date, change the \today to a set date if you want to be precise
+ {\large 7 de septiembre de 2019}											% Date, change the \today to a set date if you want to be precise
 %-----------------------------------------------------------------------
 
 \newpage % Fill the rest of the page with whitespace
@@ -176,7 +177,6 @@ Además se estudia de manera empírica mediante un software de simulación de si
 %############################
 %## Acá escribí tu trabajo ##
 %############################
-
 
 
 \section{Expresar la nueva transformada en función de transformadas conocidas}
@@ -255,6 +255,42 @@ Luego de haber calculado ambas componentes, reemplazamos \ref{primer_componente_
 \mathcal{L}_u\left\{f(t) -f(-t)\right\}
 \end{pmatrix}
 \label{transformada_con_laplace}
+\end{equation}
+
+Considerando que toda función puede ser separada en su parte par y su parte impar, nuestra transformada puede reescribirse a partir de esta descomposición. Teniendo en cuenta:
+
+$$f_{(t)} = fp_{(t)} + fi_{(t)}$$
+ donde $fp_{(t)}$ es la parte par de la función y $fi_{(t)}$ es la parte impar.\\
+ 
+ 
+Aplicando la transformada a ambos miembros sabiendo que la transformada de una suma es igual a la suma de las transformadas (como se expresa en la expresión \ref{linealidad} que se encuentra en la página \pageref{linealidad}) nos queda:
+
+$$\overline{T}_{ms}(f_{(t)}) = \overline{T}_{ms}(fp_{(t)}) + \overline{T}_{ms}(fi_{(t)})$$
+
+Se puede demostrar que la primer componente de la transformada de una función impar será nula. Se puede demostrar también que la segunda componente de una función par será nula. Teniendo esto en cuenta, podemos expresar nuestra transformada de la siguiete manera:
+{\footnotesize
+\begin{equation}
+\overline{T}_{ms}(f_{(t)}) = \frac12
+\begin{pmatrix}
+\mathcal{L}\left\{fp(t)u(t)\right\}_{(z)} +  \mathcal{L}\left\{fp(t)u(-t)\right\}_{(-z)}\\[0.2 cm]
+0 
+\end{pmatrix} +  \frac12
+\begin{pmatrix}
+0\\[0.2 cm]
+\mathcal{L}\left\{fi(t)u(t)\right\}_{(z)} -  \mathcal{L}\left\{fi(t)u(-t)\right\}_{(-z)} 
+\end{pmatrix}
+\end{equation}
+}
+
+Por lo tanto, teniendo la descomposición de la función en sus partes par e impar podemos calcular la transformada de la siguiente manera:
+
+\begin{equation}
+\overline{T}_{ms}(f_{(t)}) = \frac12
+\begin{pmatrix}
+\mathcal{L}\left\{fp(t)u(t)\right\}_{(z)} +  \mathcal{L}\left\{fp(t)u(-t)\right\}_{(-z)}\\[0.2 cm]
+\mathcal{L}\left\{fi(t)u(t)\right\}_{(z)} -  \mathcal{L}\left\{fi(t)u(-t)\right\}_{(-z)} 
+\end{pmatrix}
+\label{transformada_descompuesta}
 \end{equation}
 
 \section{Condiciones necesarias y suficientes para garantizar la existencia de la transformada}
@@ -380,6 +416,15 @@ Tomando ahora las expresiones \ref{parte_positiva} y \ref{parte_negativa}, junta
 \end{equation}
 
 
+Así como lo desarrollamos en la sección 1, se puede expresar a la transformada descomponiendo la función en estudio en sus partes par e impar (ver ecuación \ref{transformada_descompuesta}).
+
+A partir de esta expresión la antitransformada se puede expresar como:
+\begin{equation}
+f_{(t)} = \frac12 \mathcal{L}^{-1}\left\{T_x\right\} + \frac12 \mathcal{L}^{-1}\left\{T_y\right\}
+\label{antitransformada_descompuesta}
+\end{equation}
+
+Donde el primer término dará la parte impar de la función y el segundo término nos dará la parte par de la función.
 \section{Propiedades de la nueva transformada}
 
 
@@ -1022,7 +1067,7 @@ Se tomaron simulaciones dejando fijos los valores de masa y constante elástica 
 
 \begin{figure}[h!]
 \center
-\includegraphics[width=0.8\textwidth]{amortiguador_entrada.PNG}
+\includegraphics[width=0.8\textwidth]{amortiguador_entrada.png}
 \caption{Señal ingresada al sistema que emla ser un lomo de burro}
 \label{entrada}
 \end{figure}
@@ -1033,35 +1078,35 @@ Las figuras \ref{KAC0}, \ref{KAC001}, \ref{KAC01}, \ref{KAC1}, \ref{KAC10} (a pa
 
 \begin{figure}[p]
 \center
-\includegraphics[width=0.8\textwidth]{amortiguador_0.PNG}
+\includegraphics[width=0.8\textwidth]{amortiguador_0.png}
 \caption{Función resultante con $K_{ac}=0$}
 \label{KAC0}
 \end{figure}
 
 \begin{figure}[p]
 \center
-\includegraphics[width=0.8\textwidth]{amortiguador_001.PNG}
+\includegraphics[width=0.8\textwidth]{amortiguador_001.png}
 \caption{Función resultante con $K_{ac}=0.01$}
 \label{KAC001}
 \end{figure}
 
 \begin{figure}[p]
 \center
-\includegraphics[width=0.8\textwidth]{amortiguador_01.PNG}
+\includegraphics[width=0.8\textwidth]{amortiguador_01.png}
 \caption{Función resultante con $K_{ac}=0.1$}
 \label{KAC01}
 \end{figure}
 
 \begin{figure}[p]
 \center
-\includegraphics[width=0.8\textwidth]{amortiguador_1.PNG}
+\includegraphics[width=0.8\textwidth]{amortiguador_1.png}
 \caption{Función resultante con $K_{ac}=1$}
 \label{KAC1}
 \end{figure}
 
 \begin{figure}[p]
 \center
-\includegraphics[width=0.8\textwidth]{amortiguador_10.PNG}
+\includegraphics[width=0.8\textwidth]{amortiguador_10.png}
 \caption{Función resultante con $K_{ac}=10$}
 \label{KAC10}
 \end{figure}
@@ -1077,7 +1122,7 @@ Para simular una calle de adquines se sumaron 3 funciones senoidales de distinta
 
 \begin{figure}[h!]
 \center
-\includegraphics[width=0.8\textwidth]{adoquines_entrada.PNG}
+\includegraphics[width=0.8\textwidth]{adoquines_entrada.png}
 \caption{Señal ingresada al sistema que emula una calle de adoquines}
 \label{adoquines_entrada}
 \end{figure}
@@ -1086,14 +1131,14 @@ En las imágenes \ref{adoquines_1} y \ref{adoquines_10} se puede observar la ife
 
 \begin{figure}[p]
 \center
-\includegraphics[width=0.8\textwidth]{adoquines_1.PNG}
+\includegraphics[width=0.8\textwidth]{adoquines_1.png}
 \caption{Función resultante de calle de adoquines con $K_{ac}=1$}
 \label{adoquines_1}
 \end{figure}
 
 \begin{figure}[p]
 \center
-\includegraphics[width=0.8\textwidth]{adoquines_10.PNG}
+\includegraphics[width=0.8\textwidth]{adoquines_10.png}
 \caption{Función resultante de calle de adoquines con $K_{ac}=10$}
 \label{adoquines_10}
 \end{figure}
